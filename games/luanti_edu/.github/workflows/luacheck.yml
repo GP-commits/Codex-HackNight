@@ -1,0 +1,13 @@
+name: luacheck
+on: [push, pull_request]
+
+jobs:
+  luacheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Luacheck
+        uses: lunarmodules/luacheck@master
+        with:
+          args: mods

@@ -1,0 +1,713 @@
+
+
+-------------
+  Separator
+-------------
+
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\init.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\filterlist.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\buttonbar.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\dialog.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\tabview.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\ui.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\async_event.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\common.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\serverlistmgr.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\game_theme.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\init.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\pkgmgr.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\contentdb.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\update_detector.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\screenshots.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_install.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_overwrite.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_package.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_contentdb.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_config_world.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_confirm_exit.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_create_world.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_content.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_world.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_register.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rename_modpack.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_version_info.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_reinstall_mtg.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rebind_keys.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_clients_list.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_server_list_mods.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_content.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_about.lua"
+2026-07-19 04:14:27: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_local.lua"
+2026-07-19 04:14:28: WARNING[CurlFetch]: CurlFetchThread blocked for 607ms
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\init.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\register.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\after.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\mod_storage.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item_entity.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\deprecated.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\privileges.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\auth.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\chatcommands.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\chat.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\information_formspecs.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\static_spawn.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\detached_inventory.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\falling.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\forceloading.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\hud.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\knockback.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\async.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\death_screen.lua"
+2026-07-19 04:14:39: WARNING[ServerStart]: Undeclared global variable "luanti_coding" accessed at ...Edu\games\luanti_edu\mods\luanti_coding/executor.lua:6
+2026-07-19 04:14:39: ACTION[ServerStart]: [luanti_coding] Loaded!
+2026-07-19 04:14:39: ACTION[ServerStart]: [luanti_robot] Loaded!
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\game.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:14:50: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:14:50: ACTION[ServerStart]: World at [C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\worlds\edu]
+2026-07-19 04:14:50: ACTION[ServerStart]: Server for gameid="luanti_edu" listening on 127.0.0.1:56166.
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\init.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\register.lua"
+2026-07-19 04:14:50: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\env.lua"
+2026-07-19 04:14:54: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\init.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\register.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:14:54: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:15:08: ACTION[Server]: singleplayer takes luanti_robot:spawner from creative inventory
+2026-07-19 04:15:11: ACTION[Server]: singleplayer takes luanti_coding:place_block from creative inventory
+2026-07-19 04:15:14: ACTION[Server]: singleplayer takes luanti_coding:start from creative inventory
+2026-07-19 04:15:19: ACTION[Server]: singleplayer takes luanti_coding:wire from creative inventory
+2026-07-19 04:15:54: ACTION[Server]: singleplayer places node luanti_robot:spawner at (262,16,-193)
+2026-07-19 04:16:05: ACTION[Main]: CHAT: [Luanti Edu] Robot spawned! Now build your program with coding blocks and right-click the START block.
+2026-07-19 04:16:05: ERROR[Main]: Client::getMesh(): Mesh not found: "robot.b3d"
+2026-07-19 04:16:05: ERROR[Main]: GenericCAO::addToScene(): Could not load mesh robot.b3d
+2026-07-19 04:16:11: ACTION[Server]: singleplayer places node luanti_robot:spawner at (262,16,-194)
+2026-07-19 04:16:13: ACTION[Server]: singleplayer places node luanti_coding:place_block at (263,16,-194)
+2026-07-19 04:16:19: ACTION[Server]: singleplayer places node luanti_coding:wire at (264,16,-194)
+2026-07-19 04:16:20: ACTION[Main]: CHAT: [Luanti Edu] A robot already exists here!
+2026-07-19 04:16:31: ACTION[Server]: singleplayer places node luanti_robot:spawner at (263,17,-172)
+2026-07-19 04:16:34: ACTION[Server]: singleplayer places node luanti_coding:start at (263,17,-174)
+2026-07-19 04:16:40: ACTION[Server]: singleplayer places node luanti_coding:wire at (263,17,-173)
+2026-07-19 04:16:43: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:16:43: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:16:45: ACTION[Main]: CHAT: [Luanti Edu] Robot spawned! Now build your program with coding blocks and right-click the START block.
+2026-07-19 04:16:45: ERROR[Main]: Client::getMesh(): Mesh not found: "robot.b3d"
+2026-07-19 04:16:45: ERROR[Main]: GenericCAO::addToScene(): Could not load mesh robot.b3d
+2026-07-19 04:16:52: ACTION[Server]: singleplayer places node luanti_coding:place_block at (261,17,-174)
+2026-07-19 04:16:56: ACTION[Server]: singleplayer places node luanti_coding:wire at (262,17,-174)
+2026-07-19 04:16:58: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:16:58: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:17:01: ACTION[Server]: singleplayer digs luanti_robot:spawner at (263,17,-172)
+2026-07-19 04:17:02: ACTION[Server]: singleplayer digs luanti_coding:wire at (263,17,-173)
+2026-07-19 04:17:06: ACTION[Server]: singleplayer places node luanti_robot:spawner at (259,17,-174)
+2026-07-19 04:17:08: ACTION[Main]: CHAT: [Luanti Edu] Robot spawned! Now build your program with coding blocks and right-click the START block.
+2026-07-19 04:17:08: ERROR[Main]: Client::getMesh(): Mesh not found: "robot.b3d"
+2026-07-19 04:17:08: ERROR[Main]: GenericCAO::addToScene(): Could not load mesh robot.b3d
+2026-07-19 04:17:11: ACTION[Server]: singleplayer places node luanti_coding:wire at (260,17,-174)
+2026-07-19 04:17:12: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:17:12: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:18:09: WARNING[Main]: Irrlicht: SDL_PollEvent took too long: 209ms
+2026-07-19 04:18:09: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-07-19 04:18:10: ACTION[ServerStop]: Server: Shutting down
+
+
+-------------
+  Separator
+-------------
+
+2026-07-19 04:18:12: [Main]: Automatically selecting world at [C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\worlds\edu]
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\init.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\filterlist.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\buttonbar.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\dialog.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\tabview.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\ui.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\async_event.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\common.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\serverlistmgr.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\game_theme.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\init.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\pkgmgr.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\contentdb.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\update_detector.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\screenshots.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_install.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_overwrite.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_package.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_contentdb.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_config_world.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_confirm_exit.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_create_world.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_content.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_world.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_register.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rename_modpack.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_version_info.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_reinstall_mtg.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rebind_keys.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_clients_list.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_server_list_mods.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_content.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_about.lua"
+2026-07-19 04:18:13: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_local.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\init.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\register.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\after.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\mod_storage.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item_entity.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\deprecated.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\privileges.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\auth.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\chatcommands.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\chat.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\information_formspecs.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\static_spawn.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\detached_inventory.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\falling.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\forceloading.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\hud.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\knockback.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\async.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\death_screen.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: Undeclared global variable "luanti_coding" accessed at ...Edu\games\luanti_edu\mods\luanti_coding/executor.lua:6
+2026-07-19 04:18:24: ACTION[ServerStart]: [luanti_coding] Loaded!
+2026-07-19 04:18:24: ACTION[ServerStart]: [luanti_robot] Loaded!
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\game.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:18:24: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:18:24: ACTION[ServerStart]: World at [C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\worlds\edu]
+2026-07-19 04:18:24: ACTION[ServerStart]: Server for gameid="luanti_edu" listening on 127.0.0.1:61349.
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\init.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\register.lua"
+2026-07-19 04:18:24: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\env.lua"
+2026-07-19 04:18:26: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\init.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\register.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:18:26: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:18:33: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:18:33: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:18:44: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-07-19 04:18:44: ACTION[ServerStop]: Server: Shutting down
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\init.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\filterlist.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\buttonbar.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\dialog.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\tabview.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\ui.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\async_event.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\common.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\serverlistmgr.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\game_theme.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\init.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\pkgmgr.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\contentdb.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\update_detector.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\screenshots.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_install.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_overwrite.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_package.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_contentdb.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_config_world.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_confirm_exit.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_create_world.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_content.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_world.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_register.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rename_modpack.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_version_info.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_reinstall_mtg.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rebind_keys.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_clients_list.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_server_list_mods.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_content.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_about.lua"
+2026-07-19 04:18:45: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_local.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\init.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\register.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\after.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\mod_storage.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item_entity.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\deprecated.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\privileges.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\auth.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\chatcommands.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\chat.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\information_formspecs.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\static_spawn.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\detached_inventory.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\falling.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\forceloading.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\hud.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\knockback.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\async.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\death_screen.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: Undeclared global variable "luanti_coding" accessed at ...Edu\games\luanti_edu\mods\luanti_coding/executor.lua:6
+2026-07-19 04:19:17: ACTION[ServerStart]: [luanti_coding] Loaded!
+2026-07-19 04:19:17: ACTION[ServerStart]: [luanti_robot] Loaded!
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\game.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:19:17: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:19:17: ACTION[ServerStart]: World at [C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\worlds\Test World]
+2026-07-19 04:19:17: ACTION[ServerStart]: Server for gameid="luanti_edu" listening on 127.0.0.1:62806.
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\init.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\register.lua"
+2026-07-19 04:19:17: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\env.lua"
+2026-07-19 04:19:18: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\init.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\register.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:19:19: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:19:31: ACTION[Server]: singleplayer takes luanti_robot:spawner from creative inventory
+2026-07-19 04:19:35: ACTION[Server]: singleplayer takes luanti_coding:turn_right from creative inventory
+2026-07-19 04:19:38: ACTION[Server]: singleplayer takes luanti_coding:start from creative inventory
+2026-07-19 04:20:03: ACTION[Server]: singleplayer places node luanti_coding:start at (-130,15,137)
+2026-07-19 04:20:09: ACTION[Server]: singleplayer places node luanti_coding:turn_right at (-129,15,137)
+2026-07-19 04:20:12: ACTION[Server]: singleplayer digs default:leaves at (-130,16,138)
+2026-07-19 04:20:12: ACTION[Server]: singleplayer digs default:leaves at (-130,16,139)
+2026-07-19 04:20:12: ACTION[Server]: singleplayer digs default:leaves at (-131,16,140)
+2026-07-19 04:20:17: ACTION[Server]: singleplayer digs default:dirt_with_grass at (-128,14,137)
+2026-07-19 04:20:24: ACTION[Server]: singleplayer places node luanti_robot:spawner at (-128,15,137)
+2026-07-19 04:20:25: ACTION[Server]: singleplayer digs luanti_coding:start at (-130,15,137)
+2026-07-19 04:20:35: ACTION[Server]: singleplayer places node luanti_coding:start at (-130,15,137)
+2026-07-19 04:20:37: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:20:37: ACTION[Main]: CHAT: [Luanti Edu] No robot found nearby! Place a Robot Spawner and right-click it first.
+2026-07-19 04:20:39: ACTION[Server]: singleplayer leaves game. List of players: 
+2026-07-19 04:20:39: ACTION[ServerStop]: Server: Shutting down
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\mainmenu.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\init.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\filterlist.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\buttonbar.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\dialog.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\tabview.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\fstk\ui.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\async_event.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\common.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\serverlistmgr.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\game_theme.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\init.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\pkgmgr.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\contentdb.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\update_detector.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\screenshots.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_install.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_overwrite.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_package.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\content\dlg_contentdb.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_config_world.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_confirm_exit.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_create_world.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_content.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_delete_world.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_register.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rename_modpack.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_version_info.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_reinstall_mtg.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_rebind_keys.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_clients_list.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\dlg_server_list_mods.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_content.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_about.lua"
+2026-07-19 04:20:40: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\mainmenu\tab_local.lua"
+2026-07-19 04:20:43: WARNING[Main]: Irrlicht: SDL_PollEvent took too long: 220ms
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\init.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\register.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\after.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\mod_storage.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\item_entity.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\deprecated.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\privileges.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\auth.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\chatcommands.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\chat.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\information_formspecs.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\static_spawn.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\detached_inventory.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\falling.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\forceloading.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\hud.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\knockback.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\async.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\death_screen.lua"
+2026-07-19 04:21:33: WARNING[ServerStart]: Undeclared global variable "luanti_coding" accessed at ...Edu\games\luanti_edu\mods\luanti_coding/executor.lua:6
+2026-07-19 04:21:33: ACTION[ServerStart]: [luanti_coding] Loaded!
+2026-07-19 04:21:33: ACTION[ServerStart]: [luanti_robot] Loaded!
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\metatable.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\async\game.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:21:34: WARNING[ServerStart]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:21:34: ACTION[ServerStart]: World at [C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\worlds\World Edu]
+2026-07-19 04:21:34: ACTION[ServerStart]: Server for gameid="luanti_edu" listening on 127.0.0.1:59204.
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\init.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\constants.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\item_s.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\misc_s.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\features.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\game\voxelarea.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\register.lua"
+2026-07-19 04:21:34: WARNING[Emerge-0]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\emerge\env.lua"
+2026-07-19 04:21:35: ACTION[Server]: singleplayer [127.0.0.1] joins game. List of players: singleplayer
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\math.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\vector2.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\strict.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\serialize.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\misc_helpers.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\init.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\register.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\menu.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\pause_menu\register.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\init.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\settingtypes.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_change_mapgen_flags.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\dlg_settings.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\components.lua"
+2026-07-19 04:21:35: WARNING[Main]: No SHA256 known for builtin file "C:\Users\Shivadarsh\.gemini\antigravity-ide\scratch\Luanti-Edu\bin\Release\..\..\builtin\common\settings\shadows_component.lua"
+2026-07-19 04:21:47: ACTION[Server]: singleplayer takes luanti_coding:turn_right from creative inventory
+2026-07-19 04:21:49: ACTION[Server]: singleplayer takes luanti_robot:spawner from creative inventory
+2026-07-19 04:22:00: ACTION[Server]: singleplayer takes luanti_coding:move_forward from creative inventory
+2026-07-19 04:22:07: ACTION[Server]: singleplayer takes luanti_coding:start from creative inventory
+2026-07-19 04:22:17: ACTION[Server]: singleplayer places node luanti_robot:spawner at (-233,8,80)
+2026-07-19 04:22:29: ACTION[Server]: singleplayer places node luanti_coding:move_forward at (-233,8,79)
+2026-07-19 04:22:34: ACTION[Server]: singleplayer places node luanti_coding:start at (-233,8,78)
+2026-07-19 04:22:36: ACTION[Server]: singleplayer digs luanti_coding:start at (-233,8,78)
+2026-07-19 04:22:37: ACTION[Server]: singleplayer places node luanti_coding:start at (-233,8,78)
+2026-07-19 04:22:41: ACTION[Server]: singleplayer digs luanti_coding:start at (-233,8,78)
+2026-07-19 04:22:42: ACTION[Server]: singleplayer places node luanti_coding:start at (-233,8,78)
+2026-07-19 04:22:44: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:22:44: ACTION[Main]: CHAT: [Luanti Edu] No robot found nearby! Place a Robot Spawner and right-click it first.
+2026-07-19 04:22:48: ACTION[Main]: CHAT: [Luanti Edu] Robot spawned! Now build your program with coding blocks and right-click the START block.
+2026-07-19 04:22:51: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:22:51: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:22:58: ACTION[Server]: singleplayer digs luanti_coding:start at (-233,8,78)
+2026-07-19 04:22:59: ACTION[Server]: singleplayer digs luanti_coding:move_forward at (-233,8,79)
+2026-07-19 04:23:03: ACTION[Server]: singleplayer takes luanti_coding:wire from creative inventory
+2026-07-19 04:23:06: ACTION[Main]: CHAT: [Luanti Edu] A robot already exists here!
+2026-07-19 04:23:09: ACTION[Server]: singleplayer places node luanti_coding:start at (-233,8,77)
+2026-07-19 04:23:11: ACTION[Server]: singleplayer places node luanti_coding:turn_right at (-233,8,79)
+2026-07-19 04:23:14: ACTION[Server]: singleplayer places node luanti_coding:wire at (-233,8,78)
+2026-07-19 04:23:16: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:23:16: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:23:18: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:23:18: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:23:23: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:23:23: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:23:34: ACTION[Server]: singleplayer takes luanti_coding:move_forward from creative inventory
+2026-07-19 04:23:38: ACTION[Server]: singleplayer places node luanti_coding:move_forward at (-234,8,77)
+2026-07-19 04:23:40: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:23:40: ACTION[Main]: CHAT: [Luanti Edu] No instructions found! Connect some blocks to the right of the START block.
+2026-07-19 04:23:43: ACTION[Server]: singleplayer places node luanti_coding:move_forward at (-232,8,77)
+2026-07-19 04:23:44: ACTION[Server]: singleplayer digs luanti_coding:wire at (-233,8,78)
+2026-07-19 04:23:45: ACTION[Server]: singleplayer digs default:snowblock at (-234,7,78)
+2026-07-19 04:23:46: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:23:46: ACTION[Main]: CHAT: [Luanti Edu] Starting program with 1 instruction(s)...
+2026-07-19 04:23:46: ACTION[Main]: CHAT: [Luanti Edu] Step 1: Move Forward
+2026-07-19 04:23:47: ACTION[Main]: CHAT: [Luanti Edu] ✓ Program finished!
+2026-07-19 04:23:50: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:23:50: ACTION[Main]: CHAT: [Luanti Edu] Starting program with 1 instruction(s)...
+2026-07-19 04:23:50: ACTION[Main]: CHAT: [Luanti Edu] Step 1: Move Forward
+2026-07-19 04:23:51: ACTION[Main]: CHAT: [Luanti Edu] ✓ Program finished!
+2026-07-19 04:25:01: ACTION[Server]: singleplayer takes luanti_coding:loop from creative inventory
+2026-07-19 04:26:05: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:26:05: ACTION[Main]: CHAT: [Luanti Edu] Starting program with 1 instruction(s)...
+2026-07-19 04:26:05: ACTION[Main]: CHAT: [Luanti Edu] Step 1: Move Forward
+2026-07-19 04:26:05: ACTION[Main]: CHAT: [Luanti Edu] ✓ Program finished!
+2026-07-19 04:26:12: ACTION[Server]: singleplayer takes luanti_coding:loop from creative inventory
+2026-07-19 04:27:34: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:27:34: ACTION[Main]: CHAT: [Luanti Edu] Starting program with 1 instruction(s)...
+2026-07-19 04:27:34: ACTION[Main]: CHAT: [Luanti Edu] Step 1: Move Forward
+2026-07-19 04:27:35: ACTION[Main]: CHAT: [Luanti Edu] ✓ Program finished!
+2026-07-19 04:30:11: WARNING[Server]: Server: Maximum lag peaked at 68.3405 (steplen=0.1)
+2026-07-19 04:30:14: WARNING[Main]: Irrlicht: SDL_PollEvent took too long: 673ms
+2026-07-19 04:30:19: WARNING[Main]: Irrlicht: SDL_PollEvent took too long: 56ms
+2026-07-19 04:30:43: ACTION[Main]: CHAT: [Luanti Edu] Running your program...
+2026-07-19 04:30:43: ACTION[Main]: CHAT: [Luanti Edu] Starting program with 1 instruction(s)...
+2026-07-19 04:30:43: ACTION[Main]: CHAT: [Luanti Edu] Step 1: Move Forward
+2026-07-19 04:30:44: ACTION[Main]: CHAT: [Luanti Edu] ✓ Program finished!
+2026-07-19 04:52:28: WARNING[Server]: Server: Maximum lag peaked at 1135.45 (steplen=0.1)
