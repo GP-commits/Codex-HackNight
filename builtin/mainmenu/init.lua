@@ -41,7 +41,6 @@ dofile(menupath .. DIR_DELIM .. "dlg_clients_list.lua")
 dofile(menupath .. DIR_DELIM .. "dlg_server_list_mods.lua")
 
 local tabs = {
-	content  = dofile(menupath .. DIR_DELIM .. "tab_content.lua"),
 	about = dofile(menupath .. DIR_DELIM .. "tab_about.lua"),
 	local_game = dofile(menupath .. DIR_DELIM .. "tab_local.lua")
 }
@@ -110,7 +109,6 @@ local function init_globals()
 
 	tv_main:set_autosave_tab(true)
 	tv_main:add(tabs.local_game)
-	tv_main:add(tabs.content)
 	tv_main:add(tabs.about)
 
 	tv_main:set_global_event_handler(main_event_handler)

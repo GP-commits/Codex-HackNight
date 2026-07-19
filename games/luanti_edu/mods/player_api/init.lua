@@ -22,8 +22,16 @@ player_api.register_model("character.b3d", {
 
 -- Update appearance when the player joins
 minetest.register_on_joinplayer(function(player)
+	local name = player:get_player_name()
+	local host_name = minetest.settings:get("name") or ""
+	local texture = "character.png"
+
+	if minetest.is_singleplayer() or name == host_name then
+		texture = "professor.png"
+	end
+
 	player_api.set_model(player, "character.b3d")
-	player_api.set_textures(player, {"character.png"})
+	player_api.set_textures(player, {texture})
 end)
 
 minetest.register_chatcommand("student_skin", {
@@ -39,13 +47,25 @@ minetest.register_chatcommand("student_skin", {
 })
 
 minetest.register_chatcommand("educator_skin", {
-	description = "Switch to the Luanti Edu educator skin.",
+	description = "Switch to the Luanti Edu professor skin.",
 	func = function(name)
 		local player = minetest.get_player_by_name(name)
 		if not player then
 			return false, "Player is not online."
 		end
-		player_api.set_textures(player, {"educator.png"})
-		return true, "Educator skin applied."
+		player_api.set_textures(player, {"professor.png"})
+		return true, "Professor skin applied."
+	end,
+})
+
+minetest.register_chatcommand("professor_skin", {
+	description = "Switch to the Luanti Edu professor skin.",
+	func = function(name)
+		local player = minetest.get_player_by_name(name)
+		if not player then
+			return false, "Player is not online."
+		end
+		player_api.set_textures(player, {"professor.png"})
+		return true, "Professor skin applied."
 	end,
 })

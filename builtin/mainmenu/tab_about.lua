@@ -45,8 +45,13 @@ return {
 	caption = fgettext("About"),
 
 	cbf_formspec = function(tabview, name, tabdata)
-		local logofile = defaulttexturedir .. "logo.png"
+		local engine_logofile = defaulttexturedir .. "logo.png"
 		local version = core.get_version()
+
+		-- Get game details for OpenClassCraft
+		local game = pkgmgr.games[1]
+		local game_logo = game and (game.path .. "/menu/icon.png") or engine_logofile
+		local game_title = game and game.title or "OpenClassCraft"
 
 		local hypertext = {
 			"<tag name=heading color=#ff0>",
@@ -56,6 +61,9 @@ return {
 		local credits = get_credits()
 
 		table.insert_all(hypertext, {
+			"<heading>", core.hypertext_escape("OpenClassCraft Developer"), "</heading>\n",
+			core.hypertext_escape("Sivadarsh P Dinesh <sivadarshpdinesh@gmail.com>"), "\n",
+			"\n",
 			"<heading>", fgettext_ne("Core Developers"), "</heading>\n",
 		})
 		prepare_credits(hypertext, credits.core_developers)
@@ -82,25 +90,32 @@ return {
 
 		hypertext = table.concat(hypertext):sub(1, -2)
 
-		local fs = "image[1.5,0.6;2.5,2.5;" .. core.formspec_escape(logofile) .. "]" ..
+		-- Game Branding at the top left
+		local fs = "image[1.9,0.3;1.5,1.5;" .. core.formspec_escape(game_logo) .. "]" ..
 			"style_type[label;valign=center;halign=center]" ..
-			"label[0.1,3.4;5.3,0.5;" ..
-			core.formspec_escape(version.project .. " " .. version.string) .. "]" ..
-			"button_url[1.5,4.1;2.5,0.8;homepage;luanti.org;https://www.luanti.org/]"
+			"label[0.1,1.9;5.3,0.4;" .. core.formspec_escape(game_title) .. "]" ..
+			"button_url[0.5,3.25;4.5,0.7;github;GitHub;https://github.com/GP-commits/OpenCodeCraft.git]" ..
+
+			-- Engine details slightly smaller below
+			"image[0.5,4.15;1.0,1.0;" .. core.formspec_escape(engine_logofile) .. "]" ..
+			"label[1.6,4.45;3.5,0.4;" .. core.formspec_escape("Luanti " .. version.string) .. "]" ..
+
+			"button_url[1.5,5.25;2.5,0.7;homepage;luanti.org;https://www.luanti.org/]"
 
 		if PLATFORM == "Android" then
-			fs = fs .. "button[0.5,5.1;4.5,0.8;share_debug;" .. fgettext("Share debug log") .. "]"
+			fs = fs .. "button[0.5,2.45;4.5,0.7;share_debug;" .. fgettext("Share debug log") .. "]"
 		else
 			fs = fs .. "tooltip[userdata;" ..
 					fgettext("Opens the directory that contains user-provided worlds, games, mods,\n" ..
 							"and texture packs in a file manager / explorer.") .. "]"
-			fs = fs .. "button[0.5,5.1;4.5,0.8;userdata;" .. fgettext("Open User Data Directory") .. "]"
+			fs = fs .. "button[0.5,2.45;4.5,0.7;userdata;" .. fgettext("Open User Data Directory") .. "]"
 		end
 
 		local active_renderer_info = fgettext("Active renderer:") .. "\n" ..
 			core.formspec_escape(get_renderer_info())
 		fs = fs .. "style_type[textarea;valign=center]" ..
-			"textarea[0.1,6;5.7,1;;" .. active_renderer_info .. ";]" ..
+			"textarea[0.1,6.15;5.7,1;;" .. active_renderer_info .. ";]" ..
+			"box[5.5,1.2;9.3,0.03;#cfd6e6]" ..
 			"hypertext[5.5,0.25;9.75,6.6;credits;" .. core.formspec_escape(hypertext) .. "]"
 
 		return fs
@@ -119,7 +134,12 @@ return {
 
 	on_change = function(type)
 		if type == "ENTER" then
-			mm_game_theme.set_engine()
+			local game = pkgmgr.find_by_gameid(core.settings:get("menu_last_game")) or pkgmgr.games[1]
+			if game then
+				mm_game_theme.set_game(game)
+			else
+				mm_game_theme.set_engine()
+			end
 		end
 	end,
 }

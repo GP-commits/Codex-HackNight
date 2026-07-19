@@ -308,6 +308,27 @@ minetest.register_tool("default:axe_diamond", {
 })
 
 --
+-- Hoes
+--
+
+minetest.register_tool("default:hoe_diamond", {
+	description = S("Diamond Hoe"),
+	inventory_image = "default_tool_diamondshovel.png",
+	wield_image = "default_tool_diamondshovel.png^[transformR90",
+	tool_capabilities = {
+		full_punch_interval = 0.9,
+		max_drop_level = 1,
+		groupcaps = {
+			crumbly = {times = {[1] = 1.10, [2] = 0.50, [3] = 0.30}, uses = 40, maxlevel = 3},
+			snappy = {times = {[1] = 1.90, [2] = 0.90, [3] = 0.30}, uses = 40, maxlevel = 3},
+		},
+		damage_groups = {fleshy = 4},
+	},
+	sound = {breaks = "default_tool_breaks"},
+	groups = {hoe = 1}
+})
+
+--
 -- Swords
 --
 

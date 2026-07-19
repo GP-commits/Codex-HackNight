@@ -29,7 +29,7 @@ end
 function sfinv.get_nav_fs(player, context, nav, current_idx)
 	-- Only show tabs if there is more than one page
 	if #nav > 1 then
-		return "tabheader[0,0;sfinv_nav_tabs;" .. table.concat(nav, ",") ..
+		return "tabheader[0.25,0.15;sfinv_nav_tabs;" .. table.concat(nav, ",") ..
 				";" .. current_idx .. ";true;false]"
 	else
 		return ""
@@ -37,21 +37,28 @@ function sfinv.get_nav_fs(player, context, nav, current_idx)
 end
 
 local theme_inv = [[
-		image[0,5.2;1,1;gui_hb_bg.png]
-		image[1,5.2;1,1;gui_hb_bg.png]
-		image[2,5.2;1,1;gui_hb_bg.png]
-		image[3,5.2;1,1;gui_hb_bg.png]
-		image[4,5.2;1,1;gui_hb_bg.png]
-		image[5,5.2;1,1;gui_hb_bg.png]
-		image[6,5.2;1,1;gui_hb_bg.png]
-		image[7,5.2;1,1;gui_hb_bg.png]
-		list[current_player;main;0,5.2;8,1;]
-		list[current_player;main;0,6.35;8,3;8]
+		image[0.5,5.3;1,1;gui_hb_bg.png]
+		image[1.55,5.3;1,1;gui_hb_bg.png]
+		image[2.6,5.3;1,1;gui_hb_bg.png]
+		image[3.65,5.3;1,1;gui_hb_bg.png]
+		image[4.7,5.3;1,1;gui_hb_bg.png]
+		image[5.75,5.3;1,1;gui_hb_bg.png]
+		image[6.8,5.3;1,1;gui_hb_bg.png]
+		image[7.85,5.3;1,1;gui_hb_bg.png]
+		list[current_player;main;0.5,5.3;8,1;]
+		list[current_player;main;0.5,6.45;8,3;8]
 	]]
 
 function sfinv.make_formspec(player, context, content, show_inv, size)
 	local tmp = {
-		size or "size[8,9.1]",
+		size or "size[9,9.75]",
+		"style_type[button,image_button;border=true;bgcolor=#3d3d3d;textcolor=#ffffff]",
+		"style_type[button:hovered,image_button:hovered;bgcolor=#555555]",
+		"style_type[button:pressed,image_button:pressed;bgcolor=#222222]",
+		"listcolors[#1f1f1fee;#4a4a4a;#141318;#5b8d45;#ffffff]",
+		"box[0,0;9,9.75;#303030f2]",
+		"box[0.12,0.12;8.76,9.51;#111111]",
+		"box[0.2,0.2;8.6,9.35;#303030f2]",
 		sfinv.get_nav_fs(player, context, context.nav_titles, context.nav_idx),
 		show_inv and theme_inv or "",
 		content
@@ -60,7 +67,7 @@ function sfinv.make_formspec(player, context, content, show_inv, size)
 end
 
 function sfinv.get_homepage_name(player)
-	return "sfinv:crafting"
+	return "sfinv:inventory"
 end
 
 function sfinv.get_formspec(player, context)

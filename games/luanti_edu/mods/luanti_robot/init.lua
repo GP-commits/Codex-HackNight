@@ -2,6 +2,22 @@
 -- A friendly programmable robot that students control via coding blocks.
 
 local modpath = minetest.get_modpath("luanti_robot")
+local ROBOT_GRAVITY = -9.81
+local ROBOT_MAX_FALL_SPEED = -20
+
+local function is_walkable(pos)
+    local node = minetest.get_node_or_nil(pos)
+    if not node then
+        return false
+    end
+
+    local node_def = minetest.registered_nodes[node.name]
+    return node_def and node_def.walkable
+end
+
+local function snap_to_block_center(pos)
+    return vector.new(math.floor(pos.x + 0.5), pos.y, math.floor(pos.z + 0.5))
+end
 
 ----------------------------------------------------------------------
 -- Robot Entity Definition
@@ -10,9 +26,9 @@ minetest.register_entity("luanti_robot:robot", {
     initial_properties = {
         physical = true,
         collide_with_objects = false,
-        collisionbox = {-0.4, -0.5, -0.4, 0.4, 0.9, 0.4},
+        collisionbox = {-0.3, 0.0, -0.3, 0.3, 1.7, 0.3},
         visual = "mesh",
-        mesh = "robot.obj",
+        mesh = "character.b3d",
         textures = {"robot.png"},
         visual_size = {x = 1, y = 1},
         makes_footstep_sound = true,
@@ -32,6 +48,7 @@ minetest.register_entity("luanti_robot:robot", {
 
     on_activate = function(self, staticdata, dtime_s)
         self.object:set_armor_groups({immortal = 1})
+        self.object:set_acceleration(vector.new(0, ROBOT_GRAVITY, 0))
         -- Restore direction from staticdata
         if staticdata and staticdata ~= "" then
             local data = minetest.deserialize(staticdata)
@@ -51,10 +68,23 @@ minetest.register_entity("luanti_robot:robot", {
     end,
 
     on_step = function(self, dtime)
-        -- Keep robot upright
         local vel = self.object:get_velocity()
-        if vel then
-            self.object:set_velocity(vector.new(vel.x, vel.y, vel.z))
+        if not vel then
+            return
+        end
+
+        local pos = self.object:get_pos()
+        local standing_on = vector.offset(pos, 0, -0.1, 0)
+        if is_walkable(standing_on) and vel.y <= 0 then
+            self.object:set_velocity(vector.new(0, 0, 0))
+            self.object:set_acceleration(vector.new(0, 0, 0))
+        else
+            self.object:set_acceleration(vector.new(0, ROBOT_GRAVITY, 0))
+            if vel.y < ROBOT_MAX_FALL_SPEED then
+                self.object:set_velocity(vector.new(0, ROBOT_MAX_FALL_SPEED, 0))
+            else
+                self.object:set_velocity(vector.new(0, vel.y, 0))
+            end
         end
     end,
 
@@ -69,19 +99,15 @@ minetest.register_entity("luanti_robot:robot", {
     end,
 
     move_forward = function(self)
-        local pos = self.object:get_pos()
+        local pos = snap_to_block_center(self.object:get_pos())
         local dir_vec = self._dir_vecs[self._dir]
         local new_pos = vector.add(pos, dir_vec)
 
         -- Check if destination is walkable
-        local node = minetest.get_node(new_pos)
-        local node_def = minetest.registered_nodes[node.name]
-        if node_def and node_def.walkable then
+        if is_walkable(new_pos) then
             -- Try to step up one block
             local up_pos = vector.add(new_pos, vector.new(0, 1, 0))
-            local up_node = minetest.get_node(up_pos)
-            local up_def = minetest.registered_nodes[up_node.name]
-            if up_def and not up_def.walkable then
+            if not is_walkable(up_pos) then
                 new_pos = up_pos
             else
                 return  -- blocked, can't move
@@ -89,14 +115,14 @@ minetest.register_entity("luanti_robot:robot", {
         else
             -- Check if we'd fall (drop down)
             local below = vector.add(new_pos, vector.new(0, -1, 0))
-            local below_node = minetest.get_node(below)
-            local below_def = minetest.registered_nodes[below_node.name]
-            if below_def and not below_def.walkable then
+            if not is_walkable(below) then
                 new_pos = below  -- step down
             end
         end
 
-        self.object:set_pos(new_pos)
+        self.object:set_pos(snap_to_block_center(new_pos))
+        self.object:set_velocity(vector.new(0, 0, 0))
+        self.object:set_acceleration(vector.new(0, ROBOT_GRAVITY, 0))
         -- Play movement animation/sound
         minetest.sound_play("robot_move", {object = self.object, gain = 0.5}, true)
     end,
@@ -158,7 +184,7 @@ minetest.register_node("luanti_robot:spawner", {
     is_ground_content = false,
     on_rightclick = function(pos, node, clicker, itemstack, pointed_thing)
         local pname = clicker:get_player_name()
-        local spawn_pos = vector.add(pos, vector.new(0, 1, 0))
+        local spawn_pos = vector.add(snap_to_block_center(pos), vector.new(0, 1, 0))
         -- Check if there is already a robot nearby
         local objs = minetest.get_objects_inside_radius(spawn_pos, 2)
         for _, obj in ipairs(objs) do

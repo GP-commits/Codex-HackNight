@@ -543,8 +543,8 @@ void GUIEngine::drawHeader(video::IVideoDriver *driver)
 	 * Calculate the maximum rectangle
 	 */
 	core::rect<s32> formspec_rect = m_menu->getAbsoluteRect();
-	// 4 px of padding on each side
-	core::rect<s32> max_rect(4, 4, screensize.Width - 8, formspec_rect.UpperLeftCorner.Y - 8);
+	// Keep a slim edge margin while giving branded game headers more room.
+	core::rect<s32> max_rect(4, 4, screensize.Width - 8, formspec_rect.UpperLeftCorner.Y - 2);
 
 	// If no space (less than 16x16 px), draw nothing
 	if (max_rect.getWidth() < 16 || max_rect.getHeight() < 16)
@@ -553,7 +553,7 @@ void GUIEngine::drawHeader(video::IVideoDriver *driver)
 	/*
 	 * Calculate the preferred rectangle
 	 */
-	f32 mult = (((f32)screensize.Width / 2.0)) /
+	f32 mult = (((f32)screensize.Width * 0.68f)) /
 			((f32)texture->getOriginalSize().Width);
 
 	v2s32 splashsize(((f32)texture->getOriginalSize().Width) * mult,

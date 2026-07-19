@@ -1,4 +1,4 @@
-project(luanti)
+project(openclasscraft)
 
 INCLUDE(CheckTypeSize)
 INCLUDE(CheckIncludeFiles)

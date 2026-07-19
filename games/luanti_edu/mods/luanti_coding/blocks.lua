@@ -217,77 +217,88 @@ minetest.register_node("luanti_coding:stop", {
 })
 
 ----------------------------------------------------------------------
--- Craft Recipes - all coding blocks crafted with dye + stone
+-- Craft Recipes - simple recipes using stone, sticks, coal, and mese
+-- (No dye required - students get blocks for free in creative mode anyway)
 ----------------------------------------------------------------------
+
+-- START: mese crystal centre surrounded by stone
 minetest.register_craft({
     output = "luanti_coding:start",
     recipe = {
-        {"default:stone", "dye:green", "default:stone"},
-        {"dye:green",     "default:stone", "dye:green"},
-        {"default:stone", "dye:green", "default:stone"},
+        {"default:stone", "default:mese_crystal", "default:stone"},
+        {"default:mese_crystal", "default:stone", "default:mese_crystal"},
+        {"default:stone", "default:mese_crystal", "default:stone"},
     },
 })
+-- MOVE FORWARD: stone + sticks (arrow shape)
 minetest.register_craft({
     output = "luanti_coding:move_forward 3",
     recipe = {
-        {"", "dye:blue", ""},
-        {"dye:blue", "default:stone", "dye:blue"},
-        {"", "dye:blue", ""},
+        {"", "default:stick", ""},
+        {"default:stick", "default:stone", "default:stick"},
+        {"", "default:stick", ""},
     },
 })
+-- TURN LEFT: sticks curving left
 minetest.register_craft({
     output = "luanti_coding:turn_left 3",
     recipe = {
-        {"dye:violet", "default:stone", ""},
-        {"dye:violet", "default:stone", ""},
+        {"default:stick", "default:stone", ""},
+        {"default:stick", "default:stone", ""},
         {"", "", ""},
     },
 })
+-- TURN RIGHT: sticks curving right
 minetest.register_craft({
     output = "luanti_coding:turn_right 3",
     recipe = {
-        {"", "default:stone", "dye:violet"},
-        {"", "default:stone", "dye:violet"},
+        {"", "default:stone", "default:stick"},
+        {"", "default:stone", "default:stick"},
         {"", "", ""},
     },
 })
+-- LOOP: coal in corners (cycle pattern)
 minetest.register_craft({
     output = "luanti_coding:loop 2",
     recipe = {
-        {"dye:orange", "default:stone", "dye:orange"},
-        {"default:stone", "dye:orange", "default:stone"},
-        {"dye:orange", "default:stone", "dye:orange"},
+        {"default:coal_lump", "default:stone", "default:coal_lump"},
+        {"default:stone", "default:coal_lump", "default:stone"},
+        {"default:coal_lump", "default:stone", "default:coal_lump"},
     },
 })
+-- IF CLEAR: question mark shape with sticks
 minetest.register_craft({
     output = "luanti_coding:if_clear 2",
     recipe = {
-        {"dye:yellow", "default:stone", "dye:yellow"},
+        {"default:stick", "default:stone", "default:stick"},
         {"default:stone", "default:stone", "default:stone"},
-        {"", "dye:yellow", ""},
+        {"", "default:stick", ""},
     },
 })
+-- PLACE BLOCK: plus sign with stone
 minetest.register_craft({
     output = "luanti_coding:place_block 3",
     recipe = {
-        {"dye:cyan", "default:stone", "dye:cyan"},
         {"", "default:stone", ""},
-        {"", "", ""},
+        {"default:stone", "default:mese_crystal", "default:stone"},
+        {"", "default:stone", ""},
     },
 })
+-- DIG BLOCK: pick shape
 minetest.register_craft({
     output = "luanti_coding:dig_block 3",
     recipe = {
-        {"", "default:stone", ""},
-        {"dye:brown", "default:stone", "dye:brown"},
-        {"", "", ""},
+        {"default:stone", "default:stone", "default:stone"},
+        {"", "default:stick", ""},
+        {"", "default:stick", ""},
     },
 })
+-- STOP: X pattern with coal
 minetest.register_craft({
     output = "luanti_coding:stop",
     recipe = {
-        {"default:stone", "dye:red", "default:stone"},
-        {"dye:red",       "dye:red", "dye:red"},
-        {"default:stone", "dye:red", "default:stone"},
+        {"default:coal_lump", "", "default:coal_lump"},
+        {"", "default:stone", ""},
+        {"default:coal_lump", "", "default:coal_lump"},
     },
 })

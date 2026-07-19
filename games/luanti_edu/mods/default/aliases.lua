@@ -75,3 +75,7 @@ minetest.register_alias("default:pinewood", "default:pine_wood")
 
 minetest.register_alias("default:ladder", "default:ladder_wood")
 minetest.register_alias("default:sign_wall", "default:sign_wall_wood")
+
+-- Legacy schematic nodes from the removed flowers mod.
+minetest.register_alias("flowers:mushroom_brown", "air")
+minetest.register_alias("flowers:mushroom_red", "air")

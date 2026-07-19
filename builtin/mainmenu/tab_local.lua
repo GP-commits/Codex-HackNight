@@ -3,7 +3,10 @@
 -- SPDX-License-Identifier: LGPL-2.1-or-later
 
 
-local current_game, singleplayer_refresh_gamebar
+local current_game
+local local_server_choices = {}
+local local_server_last_sync = 0
+local LOCAL_SERVER_SYNC_INTERVAL = 10
 local valid_disabled_settings = {
 	["enable_damage"]=true,
 	["creative_mode"]=true,
@@ -11,8 +14,75 @@ local valid_disabled_settings = {
 }
 
 -- Name and port stored to persist when updating the formspec
-local current_name = core.settings:get("name")
-local current_port = core.settings:get("port")
+local current_name = core.settings:get("name") or ""
+local current_port = core.settings:get("port") or core.settings:get("remote_port") or "30000"
+local current_address = core.settings:get("address") or ""
+
+local function is_private_address(address)
+	if not address or address == "" then
+		return false
+	end
+	return address == "localhost" or address == "127.0.0.1" or
+		address:match("^10%.") or address:match("^192%.168%.") or
+		address:match("^172%.1[6-9]%.") or address:match("^172%.2[0-9]%.") or
+		address:match("^172%.3[0-1]%.")
+end
+
+local function get_local_server_choices()
+	local choices = {}
+	local seen = {}
+	if serverlistmgr then
+		local online = {}
+		for _, server in ipairs(serverlistmgr.servers or {}) do
+			if server.address and server.port then
+				local port = tonumber(server.port) or 30000
+				online[server.address:lower() .. ":" .. port] = server
+				if is_private_address(server.address) then
+					local key = server.address .. ":" .. port
+					if not seen[key] then
+						choices[#choices + 1] = {
+							name = server.name or server.address,
+							address = server.address,
+							port = port,
+						}
+						seen[key] = true
+					end
+				end
+			end
+		end
+
+		for _, fav in ipairs(serverlistmgr.get_favorites()) do
+			if fav.address then
+				local port = tonumber(fav.port) or 30000
+				local online_server = online[fav.address:lower() .. ":" .. port]
+				if is_private_address(fav.address) or online_server then
+					local key = fav.address .. ":" .. port
+					if not seen[key] then
+						local source = online_server or fav
+						choices[#choices + 1] = {
+							name = source.name or fav.name or fav.address,
+							address = fav.address,
+							port = port,
+						}
+						seen[key] = true
+					end
+				end
+			end
+		end
+	end
+	return choices
+end
+
+local function render_local_serverlist()
+	local rows = {}
+	for _, server in ipairs(local_server_choices) do
+		rows[#rows + 1] = core.formspec_escape(server.name .. "  " .. server.address .. ":" .. server.port)
+	end
+	if #rows == 0 then
+		return core.formspec_escape(fgettext("No online local servers found"))
+	end
+	return table.concat(rows, ",")
+end
 
 -- Currently chosen game in gamebar for theming and filtering
 function current_game()
@@ -58,66 +128,6 @@ function apply_game(game)
 	menu_worldmt_legacy(index)
 end
 
-function singleplayer_refresh_gamebar()
-
-	local old_bar = ui.find_by_name("game_button_bar")
-	if old_bar ~= nil then
-		old_bar:delete()
-	end
-
-	-- Hide gamebar if no games are installed
-	if #pkgmgr.games == 0 then
-		return false
-	end
-
-	local function game_buttonbar_button_handler(fields)
-		for _, game in ipairs(pkgmgr.games) do
-			if fields["game_btnbar_" .. game.id] then
-				apply_game(game)
-				return true
-			end
-		end
-	end
-
-	local TOUCH_GUI = core.settings:get_bool("touch_gui")
-
-	local gamebar_pos_y = MAIN_TAB_H
-		+ TABHEADER_H -- tabheader included in formspec size
-		+ (TOUCH_GUI and GAMEBAR_OFFSET_TOUCH or GAMEBAR_OFFSET_DESKTOP)
-
-	local btnbar = buttonbar_create(
-			"game_button_bar",
-			{x = 0, y = gamebar_pos_y},
-			{x = MAIN_TAB_W, y = GAMEBAR_H},
-			"#000000",
-			game_buttonbar_button_handler)
-
-	for _, game in ipairs(pkgmgr.games) do
-		local btn_name = "game_btnbar_" .. game.id
-
-		local image = nil
-		local text = nil
-		local tooltip = core.formspec_escape(game.title)
-
-		if (game.menuicon_path or "") ~= "" then
-			image = core.formspec_escape(game.menuicon_path)
-		else
-			local part1 = game.id:sub(1,5)
-			local part2 = game.id:sub(6,10)
-			local part3 = game.id:sub(11)
-
-			text = part1 .. "\n" .. part2
-			if part3 ~= "" then
-				text = text .. "\n" .. part3
-			end
-		end
-		btnbar:add_button(btn_name, text, image, tooltip)
-	end
-
-	local plus_image = core.formspec_escape(defaulttexturedir .. "plus.png")
-	btnbar:add_button("game_open_cdb", "", plus_image, fgettext("Install games from ContentDB"))
-	return true
-end
 
 local function get_disabled_settings(game)
 	if not game then
@@ -146,6 +156,12 @@ local function get_disabled_settings(game)
 end
 
 local function get_formspec(tabview, name, tabdata)
+	tabdata.view = tabdata.view or "servers"
+	if serverlistmgr and os.time() - local_server_last_sync >= LOCAL_SERVER_SYNC_INTERVAL then
+		local_server_last_sync = os.time()
+		serverlistmgr.sync()
+	end
+	local_server_choices = get_local_server_choices()
 
 	-- Point the player to ContentDB when no games are found
 	if #pkgmgr.games == 0 then
@@ -163,14 +179,10 @@ local function get_formspec(tabview, name, tabdata)
 			"button[5.25,", button_y, ";5,1.2;game_open_cdb;", fgettext("Install a game"), "]"})
 	end
 
-	local retval = ""
-
 	local index = core.get_textlist_index("sp_worlds") or filterlist.get_current_index(menudata.worldlist,
 				tonumber(core.settings:get("mainmenu_last_selected_world"))) or 0
 
 	local list = menudata.worldlist:get_list()
-	-- When changing tabs to a world list with fewer entries, the last index is selected (visually).
-	-- However, the formspec fields lag behind, thus 'index > #list' can be a valid choice.
 	local world = list and list[math.min(index, #list)]
 	local game
 
@@ -181,89 +193,130 @@ local function get_formspec(tabview, name, tabdata)
 	end
 	local disabled_settings = get_disabled_settings(game)
 
-	local creative, damage, host = "", "", ""
-
-	-- Y offsets for game settings checkboxes
-	local y = 0.2
-	local yo = 0.5625
+	local educator, damage, host = "", "", ""
+	local y = 1.45
+	local yo = 0.95
 
 	if world then
 		if disabled_settings["creative_mode"] == nil then
-			creative = "checkbox[0,"..y..";cb_creative_mode;".. fgettext("Creative Mode") .. ";" ..
-				dump(core.settings:get_bool("creative_mode")) .. "]"
+			educator = "checkbox[0.35," .. y .. ";cb_educator_mode;" .. fgettext("Educator") .. ";" ..
+				dump(core.settings:get_bool("educator_mode")) .. "]"
 			y = y + yo
 		end
 		if disabled_settings["enable_damage"] == nil then
-			damage = "checkbox[0,"..y..";cb_enable_damage;".. fgettext("Enable Damage") .. ";" ..
+			damage = "checkbox[0.35,"..y..";cb_enable_damage;".. fgettext("Enable Damage") .. ";" ..
 				dump(core.settings:get_bool("enable_damage")) .. "]"
 			y = y + yo
 		end
 		if disabled_settings["enable_server"] == nil then
-			host = "checkbox[0,"..y..";cb_server;".. fgettext("Host Server") ..";" ..
+			host = "checkbox[0.35,"..y..";cb_server;".. fgettext("Host Server") ..";" ..
 				dump(core.settings:get_bool("enable_server")) .. "]"
 			y = y + yo
 		end
 	end
 
-	retval = retval .. "container[5.25,4.875]"
-	if world then
+	-- Styling elements to match mockup
+	local styles = "style_type[button,checkbox,textlist;border=true;content_offset=0;textcolor=#ffffff]" ..
+		"style_type[label;textcolor=#ffffff]" ..
+		"style_type[button;bgcolor=#3d3d3d;textcolor=#ffffff]" ..
+		"style_type[button:hovered;bgcolor=#555555;textcolor=#ffffff]" ..
+		"style_type[button:pressed;bgcolor=#222222;textcolor=#ffffff]" ..
+		"style[play,join_local;bgcolor=#79d986;textcolor=#102416;font=bold;font_size=16]" ..
+		"style[world_create;bgcolor=#79d986;textcolor=#102416;font=bold]" ..
+		"style[world_delete;bgcolor=#b85b63;textcolor=#ffffff;font=bold]" ..
+		"style[world_configure;bgcolor=#d8d8dc;textcolor=#30343a;font=bold]" ..
+		"style[sp_worlds,local_servers;bgcolor=#141414dd;textcolor=#ffffff;border=false]" ..
+		"style[mode_singleplayer,mode_local_servers;bgcolor=#ffffff18;textcolor=#ffffff]" ..
+		"style[" .. (tabdata.view == "servers" and "mode_local_servers" or "mode_singleplayer") ..
+		";bgcolor=#79d98666;textcolor=#ffffff]"
+
+	local retval = styles ..
+			"box[0.25,0.02;15.1,7.05;#0b0d10ee]" ..
+			"box[0.4,0.17;14.8,6.75;#2f3338e8]" ..
+			"box[0.55,0.32;14.5,6.45;#ffffff1f]" ..
+			"button[5.0,0.65;2.7,0.65;mode_singleplayer;" .. fgettext("Singleplayer") .. "]" ..
+			"button[7.9,0.65;2.9,0.65;mode_local_servers;" .. fgettext("Local Servers") .. "]"
+
+	if tabdata.view == "servers" then
+		local local_index = core.get_textlist_index("local_servers") or 1
+		local chosen = local_server_choices[math.min(local_index, #local_server_choices)] or local_server_choices[1]
+		local address = current_address ~= "" and current_address or (chosen and chosen.address) or "localhost"
+		local port = current_port or tostring((chosen and chosen.port) or 30000)
 		retval = retval ..
-				"button[0,0;3.225,0.8;world_delete;".. fgettext("Delete") .. "]" ..
-				"button[3.325,0;3.225,0.8;world_configure;".. fgettext("Select Mods") .. "]"
-	end
-	retval = retval ..
-			"button[6.65,0;3.225,0.8;world_create;".. fgettext("New") .. "]" ..
-			"container_end[]" ..
-			"container[0.375,0.375]" ..
-			creative ..
+			"container[2.05,1.55]" ..
+			"label[0,0;" .. fgettext("Local Servers") .. "]" ..
+			"button[3.95,-0.15;1.95,0.55;refresh_local_servers;" .. fgettext("Refresh") .. "]" ..
+			"textlist[0,0.35;5.9,3.35;local_servers;" ..
+			render_local_serverlist() .. ";" .. local_index .. "]" ..
+			"label[6.55,0;" .. fgettext("Name") .. "]" ..
+			"field[6.55,0.25;4.15,0.75;te_playername;;" .. core.formspec_escape(current_name) .. "]" ..
+			"label[6.55,1.15;" .. fgettext("Address") .. "]" ..
+			"field[6.55,1.4;2.9,0.75;te_local_address;;" .. core.formspec_escape(address) .. "]" ..
+			"label[9.65,1.15;" .. fgettext("Port") .. "]" ..
+			"field[9.65,1.4;1.05,0.75;te_local_port;;" .. core.formspec_escape(port) .. "]" ..
+			"label[6.55,2.3;" .. fgettext("Password") .. "]" ..
+			"pwdfield[6.55,2.55;4.15,0.75;te_passwd;]" ..
+			"button[7.2,4.2;3.5,0.8;join_local;> " .. fgettext("JOIN SERVER") .. "]" ..
+			"container_end[]"
+	else
+		retval = retval ..
+			"container[2.05,1.35]" ..
+			educator ..
 			damage ..
 			host ..
 			"container_end[]" ..
-			"container[5.25,0.375]" ..
-			"label[0,0.2;".. fgettext("Select World:") .. "]"..
-			"textlist[0,0.5;9.875,3.9;sp_worlds;" ..
+			"container[5.45,1.35]" ..
+			"label[0,0;" .. fgettext("Worlds") .. "]" ..
+			"textlist[0,0.35;6.3,3.35;sp_worlds;" ..
 			menu_render_worldlist() ..
 			";" .. index .. "]" ..
-			"container_end[]"
+			"container_end[]" ..
+			"box[1.65,5.0;12.45,0.03;#ffffff33]" ..
+			"container[3.2,5.25]"
 
-	if core.settings:get_bool("enable_server") and disabled_settings["enable_server"] == nil then
-		retval = retval ..
-				"button[10.1875,5.925;4.9375,0.8;play;".. fgettext("Host Game") .. "]" ..
-				"container[0.375,0.375]" ..
-				"checkbox[0,"..y..";cb_server_announce;" .. fgettext("Announce Server") .. ";" ..
-				dump(core.settings:get_bool("server_announce")) .. "]"
-
-		-- Reset y so that the text fields always start at the same position,
-		-- regardless of whether some of the checkboxes are hidden.
-		y = 0.2 + 4 * yo + 0.35
-
-		retval = retval .. "field[0," .. y .. ";4.5,0.75;te_playername;" .. fgettext("Name") .. ";" ..
-				core.formspec_escape(current_name) .. "]"
-
-		y = y + 1.15 + 0.25
-
-		retval = retval .. "pwdfield[0," .. y .. ";4.5,0.75;te_passwd;" .. fgettext("Password") .. "]"
-
-		y = y + 1.15 + 0.25
-
-		local bind_addr = core.settings:get("bind_address")
-		if bind_addr ~= nil and bind_addr ~= "" then
+		if world then
 			retval = retval ..
-				"field[0," .. y .. ";3,0.75;te_serveraddr;" .. fgettext("Bind Address") .. ";" ..
-				core.formspec_escape(core.settings:get("bind_address")) .. "]" ..
-				-- TRANSLATORS: Network port
-				"field[3.25," .. y .. ";1.25,0.75;te_serverport;" .. fgettext("Port") .. ";" ..
-				core.formspec_escape(current_port) .. "]"
-		else
-			retval = retval ..
-				"field[0," .. y .. ";4.5,0.75;te_serverport;" .. fgettext("Server Port") .. ";" ..
-				core.formspec_escape(current_port) .. "]"
+					"button[0,0;1.65,0.6;world_delete;".. fgettext("Delete") .. "]" ..
+					"button[2.0,0;2.55,0.6;world_configure;".. fgettext("Configure Mods") .. "]"
 		end
 
-		retval = retval .. "container_end[]"
-	elseif world then
 		retval = retval ..
-				"button[10.1875,5.925;4.9375,0.8;play;" .. fgettext("Play Game") .. "]"
+				"button[4.9,0;2.25,0.6;world_create;+ " .. fgettext("New World") .. "]" ..
+				"container_end[]"
+
+		if core.settings:get_bool("enable_server") and disabled_settings["enable_server"] == nil then
+			retval = retval ..
+					"container[11.95,1.35]" ..
+					"checkbox[0,0;cb_server_announce;" .. fgettext("Announce Server") .. ";" ..
+					dump(core.settings:get_bool("server_announce")) .. "]"
+
+			y = 0.6
+			retval = retval .. "field[0," .. y .. ";2.4,0.7;te_playername;" .. fgettext("Name") .. ";" ..
+					core.formspec_escape(current_name) .. "]"
+
+			y = y + 1.0
+			retval = retval .. "pwdfield[0," .. y .. ";2.4,0.7;te_passwd;" .. fgettext("Password") .. "]"
+
+			y = y + 1.0
+			local bind_addr = core.settings:get("bind_address")
+			if bind_addr ~= nil and bind_addr ~= "" then
+				retval = retval ..
+					"field[0," .. y .. ";1.55,0.7;te_serveraddr;" .. fgettext("Bind Address") .. ";" ..
+					core.formspec_escape(core.settings:get("bind_address")) .. "]" ..
+					"field[1.7," .. y .. ";0.7,0.7;te_serverport;" .. fgettext("Port") .. ";" ..
+					core.formspec_escape(current_port) .. "]"
+			else
+				retval = retval ..
+					"field[0," .. y .. ";2.4,0.7;te_serverport;" .. fgettext("Server Port") .. ";" ..
+					core.formspec_escape(current_port) .. "]"
+			end
+			retval = retval ..
+				"button[0,3.35;2.4,0.75;play;> " .. fgettext("HOST GAME") .. "]" ..
+				"container_end[]"
+		elseif world then
+			retval = retval ..
+					"button[6.05,6.1;3.6,0.75;play;> " .. fgettext("PLAY GAME") .. "]"
+		end
 	end
 
 	return retval
@@ -290,10 +343,75 @@ local function main_button_handler(this, fields, name, tabdata)
 
 	if fields["te_playername"] then
 		current_name = fields["te_playername"]
+		core.settings:set("name", current_name)
 	end
 
 	if fields["te_serverport"] then
 		current_port = fields["te_serverport"]
+	end
+
+	if fields["te_local_port"] then
+		current_port = fields["te_local_port"]
+	end
+
+	if fields["te_local_address"] then
+		current_address = fields["te_local_address"]
+	end
+
+	if fields["mode_singleplayer"] then
+		tabdata.view = "singleplayer"
+		return true
+	end
+
+	if fields["mode_local_servers"] then
+		tabdata.view = "servers"
+		return true
+	end
+
+	if fields["refresh_local_servers"] then
+		if serverlistmgr then
+			local_server_last_sync = os.time()
+			serverlistmgr.sync()
+		end
+		return true
+	end
+
+	if fields["local_servers"] ~= nil then
+		local event = core.explode_textlist_event(fields["local_servers"])
+		local selected = core.get_textlist_index("local_servers") or 1
+		local server = local_server_choices[selected]
+		if server then
+			current_address = server.address
+			current_port = tostring(server.port)
+			core.settings:set("address", current_address)
+			core.settings:set("remote_port", current_port)
+			if event.type == "DCL" then
+				gamedata.mode = "join"
+				gamedata.address = current_address
+				gamedata.port = tonumber(current_port) or 30000
+				gamedata.playername = current_name
+				gamedata.password = fields["te_passwd"]
+				gamedata.selected_world = 0
+				core.start()
+			end
+			return true
+		end
+	end
+
+	if fields["join_local"] then
+		local port = tonumber(current_port) or 30000
+		if current_address and current_address ~= "" then
+			gamedata.mode = "join"
+			gamedata.address = current_address
+			gamedata.port = port
+			gamedata.playername = current_name
+			gamedata.password = fields["te_passwd"]
+			gamedata.selected_world = 0
+			core.settings:set("address", current_address)
+			core.settings:set("remote_port", tostring(port))
+			core.start()
+		end
+		return true
 	end
 
 	if fields["sp_worlds"] ~= nil then
@@ -343,7 +461,11 @@ local function main_button_handler(this, fields, name, tabdata)
 		core.settings:set("server_announce", fields["cb_server_announce"])
 		local selected = core.get_textlist_index("srv_worlds")
 		menu_worldmt(selected, "server_announce", fields["cb_server_announce"])
+		return true
+	end
 
+	if fields["cb_educator_mode"] then
+		core.settings:set_bool("educator_mode", fields["cb_educator_mode"] == "true")
 		return true
 	end
 
@@ -390,6 +512,18 @@ local function main_button_handler(this, fields, name, tabdata)
 			core.settings:set("port",gamedata.port)
 			if fields["te_serveraddr"] ~= nil then
 				core.settings:set("bind_address",fields["te_serveraddr"])
+			end
+
+			-- Educator mode: grant the hosting player full admin privileges
+			if core.settings:get_bool("educator_mode") then
+				local pname = fields["te_playername"] or ""
+				if pname ~= "" then
+					core.settings:set("name", pname)
+					core.settings:set("default_privs", "interact, shout")
+					core.settings:set("initial_privs", "interact, shout")
+					-- Server admin gets all privs
+					core.settings:set("server_dedicated", "false")
+				end
 			end
 		else
 			gamedata.mode = "singleplayer"
@@ -453,16 +587,8 @@ local function on_change(type)
 		else
 			mm_game_theme.set_engine()
 		end
-
-		if singleplayer_refresh_gamebar() then
-			ui.find_by_name("game_button_bar"):show()
-		end
 	elseif type == "LEAVE" then
 		menudata.worldlist:set_filtercriteria(nil)
-		local gamebar = ui.find_by_name("game_button_bar")
-		if gamebar then
-			gamebar:hide()
-		end
 	end
 end
 

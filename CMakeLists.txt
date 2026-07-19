@@ -4,8 +4,8 @@ if(POLICY CMP0177)
 endif()
 
 # This can be read from ${PROJECT_NAME} after project() is called
-project(luanti-edu)
-set(PROJECT_NAME_CAPITALIZED "Luanti Edu")
+project(openclasscraft)
+set(PROJECT_NAME_CAPITALIZED "OpenClassCraft")
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
