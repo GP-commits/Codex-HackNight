@@ -457,7 +457,7 @@ minetest.register_node("default:dirt_with_grass", {
 	groups = {crumbly = 3, soil = 1, spreading_dirt_type = 1},
 	drop = "default:dirt",
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_grass_footstep", gain = 0.25},
+		footstep = {name = "openclasscraft_grass_footstep", gain = 0.25},
 	}),
 })
 
@@ -469,7 +469,7 @@ minetest.register_node("default:dirt_with_grass_footsteps", {
 	groups = {crumbly = 3, soil = 1, not_in_creative_inventory = 1},
 	drop = "default:dirt",
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_grass_footstep", gain = 0.25},
+		footstep = {name = "openclasscraft_grass_footstep", gain = 0.25},
 	}),
 })
 
@@ -482,7 +482,7 @@ minetest.register_node("default:dirt_with_dry_grass", {
 	groups = {crumbly = 3, soil = 1, spreading_dirt_type = 1},
 	drop = "default:dirt",
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_grass_footstep", gain = 0.4},
+		footstep = {name = "openclasscraft_grass_footstep", gain = 0.4},
 	}),
 })
 
@@ -509,7 +509,7 @@ minetest.register_node("default:dirt_with_rainforest_litter", {
 	groups = {crumbly = 3, soil = 1, spreading_dirt_type = 1},
 	drop = "default:dirt",
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_grass_footstep", gain = 0.4},
+		footstep = {name = "openclasscraft_grass_footstep", gain = 0.4},
 	}),
 })
 
@@ -524,7 +524,7 @@ minetest.register_node("default:dirt_with_coniferous_litter", {
 	groups = {crumbly = 3, soil = 1, spreading_dirt_type = 1},
 	drop = "default:dirt",
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_grass_footstep", gain = 0.4},
+		footstep = {name = "openclasscraft_grass_footstep", gain = 0.4},
 	}),
 })
 
@@ -544,7 +544,7 @@ minetest.register_node("default:dry_dirt_with_dry_grass", {
 	groups = {crumbly = 3, soil = 1},
 	drop = "default:dry_dirt",
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_grass_footstep", gain = 0.4},
+		footstep = {name = "openclasscraft_grass_footstep", gain = 0.4},
 	}),
 })
 
@@ -571,7 +571,7 @@ minetest.register_node("default:permafrost_with_moss", {
 			tileable_vertical = false}},
 	groups = {cracky = 3},
 	sounds = default.node_sound_dirt_defaults({
-		footstep = {name = "default_grass_footstep", gain = 0.25},
+		footstep = {name = "openclasscraft_grass_footstep", gain = 0.25},
 	}),
 })
 
@@ -1988,8 +1988,8 @@ minetest.register_node("default:sand_with_kelp", {
 	node_dig_prediction = "default:sand",
 	node_placement_prediction = "",
 	sounds = default.node_sound_sand_defaults({
-		dig = {name = "default_dig_snappy", gain = 0.2},
-		dug = {name = "default_grass_footstep", gain = 0.25},
+		dig = {name = "openclasscraft_dig_crumbly", gain = 0.2},
+		dug = {name = "openclasscraft_grass_footstep", gain = 0.25},
 	}),
 
 	on_place = function(itemstack, placer, pointed_thing)
@@ -2100,8 +2100,8 @@ minetest.register_node("default:coral_green", {
 	node_dig_prediction = "default:coral_skeleton",
 	node_placement_prediction = "",
 	sounds = default.node_sound_stone_defaults({
-		dig = {name = "default_dig_snappy", gain = 0.2},
-		dug = {name = "default_grass_footstep", gain = 0.25},
+		dig = {name = "openclasscraft_dig_crumbly", gain = 0.2},
+		dug = {name = "openclasscraft_grass_footstep", gain = 0.25},
 	}),
 
 	on_place = coral_on_place,
@@ -2131,8 +2131,8 @@ minetest.register_node("default:coral_pink", {
 	node_dig_prediction = "default:coral_skeleton",
 	node_placement_prediction = "",
 	sounds = default.node_sound_stone_defaults({
-		dig = {name = "default_dig_snappy", gain = 0.2},
-		dug = {name = "default_grass_footstep", gain = 0.25},
+		dig = {name = "openclasscraft_dig_crumbly", gain = 0.2},
+		dug = {name = "openclasscraft_grass_footstep", gain = 0.25},
 	}),
 
 	on_place = coral_on_place,
@@ -2162,8 +2162,8 @@ minetest.register_node("default:coral_cyan", {
 	node_dig_prediction = "default:coral_skeleton",
 	node_placement_prediction = "",
 	sounds = default.node_sound_stone_defaults({
-		dig = {name = "default_dig_snappy", gain = 0.2},
-		dug = {name = "default_grass_footstep", gain = 0.25},
+		dig = {name = "openclasscraft_dig_crumbly", gain = 0.2},
+		dug = {name = "openclasscraft_grass_footstep", gain = 0.25},
 	}),
 
 	on_place = coral_on_place,
@@ -2211,8 +2211,8 @@ minetest.register_node("default:water_source", {
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 2.0,
 			},
 		},
@@ -2221,8 +2221,8 @@ minetest.register_node("default:water_source", {
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 2.0,
 			},
 		},
@@ -2256,8 +2256,8 @@ minetest.register_node("default:water_flowing", {
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 0.5,
 			},
 		},
@@ -2266,8 +2266,8 @@ minetest.register_node("default:water_flowing", {
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 0.5,
 			},
 		},
@@ -2302,8 +2302,8 @@ minetest.register_node("default:river_water_source", {
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 2.0,
 			},
 		},
@@ -2312,8 +2312,8 @@ minetest.register_node("default:river_water_source", {
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 2.0,
 			},
 		},
@@ -2352,8 +2352,8 @@ minetest.register_node("default:river_water_flowing", {
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 0.5,
 			},
 		},
@@ -2362,8 +2362,8 @@ minetest.register_node("default:river_water_flowing", {
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 0.5,
 			},
 		},
@@ -2400,8 +2400,8 @@ minetest.register_node("default:lava_source", {
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 3.0,
 			},
 		},
@@ -2410,8 +2410,8 @@ minetest.register_node("default:lava_source", {
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 3.0,
 			},
 		},
@@ -2445,8 +2445,8 @@ minetest.register_node("default:lava_flowing", {
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 3.3,
 			},
 		},
@@ -2455,8 +2455,8 @@ minetest.register_node("default:lava_flowing", {
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
-				aspect_w = 16,
-				aspect_h = 16,
+				aspect_w = 64,
+				aspect_h = 64,
 				length = 3.3,
 			},
 		},

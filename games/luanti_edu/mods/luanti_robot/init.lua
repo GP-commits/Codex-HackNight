@@ -124,19 +124,19 @@ minetest.register_entity("luanti_robot:robot", {
         self.object:set_velocity(vector.new(0, 0, 0))
         self.object:set_acceleration(vector.new(0, ROBOT_GRAVITY, 0))
         -- Play movement animation/sound
-        minetest.sound_play("robot_move", {object = self.object, gain = 0.5}, true)
+        minetest.sound_play("openclasscraft_robot_move", {object = self.object, gain = 0.5}, true)
     end,
 
     turn_left = function(self)
         self._dir = (self._dir + 1) % 4
         self:_update_yaw()
-        minetest.sound_play("robot_turn", {object = self.object, gain = 0.3}, true)
+        minetest.sound_play("openclasscraft_robot_turn", {object = self.object, gain = 0.3}, true)
     end,
 
     turn_right = function(self)
         self._dir = (self._dir - 1 + 4) % 4
         self:_update_yaw()
-        minetest.sound_play("robot_turn", {object = self.object, gain = 0.3}, true)
+        minetest.sound_play("openclasscraft_robot_turn", {object = self.object, gain = 0.3}, true)
     end,
 
     is_forward_clear = function(self)
@@ -156,7 +156,7 @@ minetest.register_entity("luanti_robot:robot", {
         local node_def = minetest.registered_nodes[node.name]
         if node_def and not node_def.walkable then
             minetest.set_node(target, {name = "default:stone"})
-            minetest.sound_play("default_place_node_hard", {pos = target, gain = 0.5}, true)
+            minetest.sound_play("openclasscraft_place_hard", {pos = target, gain = 0.5}, true)
         end
     end,
 
@@ -168,7 +168,7 @@ minetest.register_entity("luanti_robot:robot", {
         local node_def = minetest.registered_nodes[node.name]
         if node_def and node_def.walkable and node.name ~= "air" then
             minetest.remove_node(target)
-            minetest.sound_play("default_dig_hard", {pos = target, gain = 0.5}, true)
+            minetest.sound_play("openclasscraft_dig_cracky", {pos = target, gain = 0.5}, true)
         end
     end,
 })

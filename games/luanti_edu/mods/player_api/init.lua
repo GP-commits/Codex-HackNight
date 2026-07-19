@@ -2,7 +2,7 @@ dofile(minetest.get_modpath("player_api") .. "/api.lua")
 
 -- Default player appearance
 player_api.register_model("character.b3d", {
-	animation_speed = 30,
+	animation_speed = 34,
 	textures = {"character.png"},
 	animations = {
 		-- Standard animations.

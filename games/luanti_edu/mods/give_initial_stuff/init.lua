@@ -1,13 +1,11 @@
 -- Luanti Edu: Give Initial Stuff
--- Gives every new player diamond tools + all coding blocks on first join.
+-- Gives every new player starter tools + all coding blocks on first join.
 
 local STARTER_ITEMS = {
-    -- Diamond Tools
+    -- Starter tools. These use diamond-level capabilities but appear as normal tools.
     "default:pick_diamond",
     "default:axe_diamond",
     "default:shovel_diamond",
-    "default:hoe_diamond",
-    "default:diamond 16",
 
     -- Robot Spawner
     "luanti_robot:spawner",
@@ -36,7 +34,7 @@ local function give_stuff(player)
     minetest.chat_send_player(player:get_player_name(),
         "=== Welcome to Luanti Edu! ===\n" ..
         "You have been given:\n" ..
-        "  - Diamond Pickaxe, Axe, Shovel, Hoe & Diamonds\n" ..
+        "  - Pickaxe, Axe, and Shovel\n" ..
         "  - A Robot Spawner\n" ..
         "  - All Programming Blocks\n" ..
         "Place the Robot Spawner, right-click to spawn your robot,\n" ..
@@ -64,7 +62,7 @@ end)
 
 -- Command to re-give items if needed
 minetest.register_chatcommand("givetools", {
-    description = "Re-give starter diamond tools and coding blocks",
+    description = "Re-give starter tools and coding blocks",
     func = function(name)
         local player = minetest.get_player_by_name(name)
         if player then

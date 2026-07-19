@@ -282,7 +282,7 @@ void set_default_settings()
 	settings->setDefault("enable_3d_clouds", "true");
 	settings->setDefault("soft_clouds", "false");
 	settings->setDefault("cloud_radius", "12");
-	settings->setDefault("menu_clouds", "true");
+	settings->setDefault("menu_clouds", "false");
 	settings->setDefault("menu_theme", "light");
 	settings->setDefault("translucent_liquids", "true");
 	settings->setDefault("console_height", "0.6");

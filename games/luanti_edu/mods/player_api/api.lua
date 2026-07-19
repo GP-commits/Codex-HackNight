@@ -1,8 +1,9 @@
 player_api = {}
 
--- Player animation blending
--- Note: This is currently broken due to a bug in Irrlicht, leave at 0
-local animation_blend = 0
+-- Player animation blending. A small value softens transitions without making
+-- the classic character rig feel floaty.
+local animation_blend = 0.12
+local head_bone_name = "Head"
 
 player_api.registered_models = {}
 
@@ -55,6 +56,42 @@ player_api.player_attached = {}
 
 local function get_player_data(player)
 	return assert(players[player:get_player_name()])
+end
+
+local function clamp(value, min_value, max_value)
+	return math.max(min_value, math.min(max_value, value))
+end
+
+local function round_animation_speed(speed)
+	return math.floor(speed * 2 + 0.5) / 2
+end
+
+local function get_horizontal_speed(player)
+	local velocity = player:get_velocity()
+	if not velocity then
+		return 0
+	end
+	return math.sqrt(velocity.x * velocity.x + velocity.z * velocity.z)
+end
+
+local function update_head_look(player, player_data, dtime)
+	if not player.set_bone_override then
+		return
+	end
+
+	local target_pitch = clamp(player:get_look_vertical() or 0, -0.8, 0.8)
+	local current_pitch = player_data.head_pitch or 0
+	local blend = clamp((dtime or 0.1) * 10, 0.15, 1)
+	current_pitch = current_pitch + (target_pitch - current_pitch) * blend
+	player_data.head_pitch = current_pitch
+
+	player:set_bone_override(head_bone_name, {
+		rotation = {
+			vec = {x = current_pitch, y = 0, z = 0},
+			interpolation = 0.08,
+			absolute = false,
+		},
+	})
 end
 
 function player_api.get_animation(player)
@@ -189,19 +226,22 @@ function minetest.calculate_knockback(player, ...)
 end
 
 -- Check each player and apply animations
-function player_api.globalstep()
+function player_api.globalstep(dtime)
 	for _, player in ipairs(minetest.get_connected_players()) do
 		local name = player:get_player_name()
 		local player_data = players[name]
 		local model = player_data and models[player_data.model]
 		if model and not player_attached[name] then
 			local controls = player:get_player_control()
-			local animation_speed_mod = model.animation_speed or 30
+			local horizontal_speed = get_horizontal_speed(player)
+			local animation_speed_mod = round_animation_speed(clamp(horizontal_speed * 9, 22, 42))
 
 			-- Determine if the player is sneaking, and reduce animation speed if so
 			if controls.sneak then
-				animation_speed_mod = animation_speed_mod / 2
+				animation_speed_mod = round_animation_speed(animation_speed_mod / 2)
 			end
+
+			update_head_look(player, player_data, dtime)
 
 			-- Apply animations based on what the player is doing
 			if player:get_hp() == 0 then
@@ -215,7 +255,7 @@ function player_api.globalstep()
 			elseif controls.LMB or controls.RMB then
 				player_set_animation(player, "mine", animation_speed_mod)
 			else
-				player_set_animation(player, "stand", animation_speed_mod)
+				player_set_animation(player, "stand", model.animation_speed or 30)
 			end
 		end
 	end

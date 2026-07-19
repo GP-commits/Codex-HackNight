@@ -353,6 +353,7 @@ void GameFormSpec::showPlayerInventory(const std::string *fs_override)
 	fs_src.release(); // owned by GUIFormSpecMenu
 }
 
+#define PAUSE_SIZE_TAG "size[10.8,6.3,true]" // Fixed size (ignored in touchscreen mode)
 #define SIZE_TAG "size[11,5.5,true]" // Fixed size (ignored in touchscreen mode)
 
 void GameFormSpec::showPauseMenu()
@@ -377,44 +378,66 @@ void GameFormSpec::showPauseMenu()
 
 	auto simple_singleplayer_mode = m_client->m_simple_singleplayer_mode;
 
-	float ypos = simple_singleplayer_mode ? 0.7f : 0.1f;
+	float ypos = simple_singleplayer_mode ? 1.65f : 1.2f;
 	std::ostringstream os;
 
-	os << "formspec_version[1]" << SIZE_TAG
-		<< "button_exit[4," << (ypos++) << ";3,0.5;btn_continue;"
+	os << "formspec_version[4]" << PAUSE_SIZE_TAG
+		<< "no_prepend[]"
+		<< "bgcolor[#00000080;fullscreen]"
+		<< "background[0,0;10.8,6.3;openclasscraft_pause_bg.png;true]"
+		<< "box[0,0;10.8,6.3;#07131acc]"
+		<< "box[0.22,0.22;10.36,5.86;#26333add]"
+		<< "box[0.42,0.42;3.2,5.46;#111b20dd]"
+		<< "box[3.85,0.42;6.52,5.46;#34434add]"
+		<< "box[0.42,0.42;9.95,0.68;#6ea85bee]"
+		<< "image[0.7,0.58;0.84,0.84;openclasscraft_pause_icon.png]"
+		<< "style_type[label;textcolor=#ffffff]"
+		<< "style_type[textarea;border=false;textcolor=#eef7ee]"
+		<< "style_type[button;border=true;bgcolor=#55646a;textcolor=#ffffff;font_size=16]"
+		<< "style_type[button:hovered;bgcolor=#6f8f6c;textcolor=#ffffff]"
+		<< "style_type[button:pressed;bgcolor=#3e6a42;textcolor=#ffffff]"
+		<< "style[btn_continue;bgcolor=#7bd982;textcolor=#0f2613;font=bold]"
+		<< "style[btn_settings,btn_sound;bgcolor=#4c6470;textcolor=#ffffff]"
+		<< "style[btn_exit_menu,btn_exit_os;bgcolor=#98545e;textcolor=#ffffff]"
+		<< "label[1.72,0.7;OpenClassCraft]"
+		<< "label[5.95,0.7;" << strgettext("Game Paused") << "]"
+		<< "button_exit[5.25," << (ypos) << ";3.65,0.68;btn_continue;"
 		// TRANSLATORS: Pause menu button, try to keep the translation short
 		<< strgettext("Continue") << "]";
+	ypos += 0.86f;
 
 	if (!simple_singleplayer_mode) {
-		os << "button[4," << (ypos++) << ";3,0.5;btn_change_password;"
+		os << "button[5.25," << (ypos) << ";3.65,0.68;btn_change_password;"
 			// TRANSLATORS: Pause menu button, try to keep the translation short
 			<< strgettext("Change Password") << "]";
-	} else {
-		os << "field[4.95,0;5,1.5;;" << strgettext("Game paused") << ";]";
+		ypos += 0.86f;
 	}
 
-	os	<< "button[4," << (ypos++) << ";3,0.5;btn_settings;"
+	os	<< "button[5.25," << (ypos) << ";3.65,0.68;btn_settings;"
 		// TRANSLATORS: Try to keep the translation short
 		<< strgettext("Settings") << "]";
+	ypos += 0.86f;
 
 #ifndef __ANDROID__
 #if USE_SOUND
-	os << "button[4," << (ypos++) << ";3,0.5;btn_sound;"
+	os << "button[5.25," << (ypos) << ";3.65,0.68;btn_sound;"
 		// TRANSLATORS: Pause menu button, try to keep the translation short
 		<< strgettext("Sound Volume") << "]";
+	ypos += 0.86f;
 #endif
 #endif
 
-	os		<< "button_exit[4," << (ypos++) << ";3,0.5;btn_exit_menu;"
+	os		<< "button_exit[5.25," << (ypos) << ";3.65,0.68;btn_exit_menu;"
 		// TRANSLATORS: Pause menu button, try to keep the translation short
 		<< strgettext("Exit to Menu") << "]";
-	os		<< "button_exit[4," << (ypos++) << ";3,0.5;btn_exit_os;"
+	ypos += 0.86f;
+	os		<< "button_exit[5.25," << (ypos) << ";3.65,0.68;btn_exit_os;"
 		// TRANSLATORS: Pause menu button, try to keep the translation short (OS = Operating System)
 		<< strgettext("Exit to OS")   << "]";
 	if (!control_text.empty()) {
-	os		<< "textarea[7.5,0.25;3.9,6.25;;" << control_text << ";]";
+	os		<< "textarea[8.85,1.32;1.22,4.55;;" << control_text << ";]";
 	}
-	os		<< "textarea[0.4,0.25;3.9,6.25;;" << PROJECT_NAME_C " " VERSION_STRING "\n"
+	os		<< "textarea[0.75,1.62;2.55,3.92;;" << PROJECT_NAME_C " " VERSION_STRING "\n"
 		<< "\n"
 		<<  strgettext("Game info:") << "\n";
 	const std::string &address = m_client->getAddressName();

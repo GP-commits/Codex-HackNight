@@ -247,7 +247,7 @@ local function furnace_node_timer(pos, elapsed)
 
 	if items_smelt > 0 then
 		-- Play cooling sound
-		core.sound_play("default_cool_lava",
+		core.sound_play("openclasscraft_place_hard",
 			{ pos = pos, max_hear_distance = 16, gain = 0.07 * math.min(items_smelt, 7) }, true)
 	end
 	if fuel and fuel_totaltime > fuel.time then

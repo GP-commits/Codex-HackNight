@@ -1673,48 +1673,7 @@ function default.register_mgv6_decorations()
 	        height_max = 4,
 	})
 
-	-- Long grasses
-
-	for length = 1, 5 do
-		minetest.register_decoration({
-			name = "default:grass_"..length,
-			deco_type = "simple",
-			place_on = {"default:dirt_with_grass"},
-			sidelen = 16,
-			noise_params = {
-				offset = 0,
-				scale = 0.007,
-				spread = {x = 100, y = 100, z = 100},
-				seed = 329,
-				octaves = 3,
-				persist = 0.6
-			},
-			y_max = 30,
-			y_min = 1,
-			decoration = "default:grass_"..length,
-		})
-	end
-
-	-- Dry shrubs
-
-	minetest.register_decoration({
-		name = "default:dry_shrub",
-		deco_type = "simple",
-		place_on = {"default:desert_sand", "default:dirt_with_snow"},
-		sidelen = 16,
-		noise_params = {
-			offset = 0,
-			scale = 0.035,
-			spread = {x = 100, y = 100, z = 100},
-			seed = 329,
-			octaves = 3,
-			persist = 0.6
-		},
-		y_max = 30,
-		y_min = 1,
-		decoration = "default:dry_shrub",
-		param2 = 4,
-	})
+	-- OpenClassCraft world decorations replace the old grass and dry shrub set.
 end
 
 
@@ -2281,90 +2240,8 @@ function default.register_decorations()
 		flags = "place_center_x, place_center_z",
 	})
 
-	-- Grasses
-
-	register_grass_decoration(-0.03,  0.09,  5)
-	register_grass_decoration(-0.015, 0.075, 4)
-	register_grass_decoration(0,      0.06,  3)
-	register_grass_decoration(0.015,  0.045, 2)
-	register_grass_decoration(0.03,   0.03,  1)
-
-	-- Dry grasses
-
-	register_dry_grass_decoration(0.01, 0.05,  5)
-	register_dry_grass_decoration(0.03, 0.03,  4)
-	register_dry_grass_decoration(0.05, 0.01,  3)
-	register_dry_grass_decoration(0.07, -0.01, 2)
-	register_dry_grass_decoration(0.09, -0.03, 1)
-
-	-- Ferns
-
-	register_fern_decoration(14936, 3)
-	register_fern_decoration(801,   2)
-	register_fern_decoration(5,     1)
-
-	-- Junglegrass
-
-	minetest.register_decoration({
-		name = "default:junglegrass",
-		deco_type = "simple",
-		place_on = {"default:dirt_with_rainforest_litter"},
-		sidelen = 80,
-		fill_ratio = 0.1,
-		biomes = {"rainforest"},
-		y_max = 31000,
-		y_min = 1,
-		decoration = "default:junglegrass",
-	})
-
-	-- Dry shrub
-
-	minetest.register_decoration({
-		name = "default:dry_shrub",
-		deco_type = "simple",
-		place_on = {"default:desert_sand",
-			"default:sand", "default:silver_sand"},
-		sidelen = 16,
-		noise_params = {
-			offset = 0,
-			scale = 0.02,
-			spread = {x = 200, y = 200, z = 200},
-			seed = 329,
-			octaves = 3,
-			persist = 0.6
-		},
-		biomes = {"desert", "sandstone_desert", "cold_desert"},
-		y_max = 31000,
-		y_min = 2,
-		decoration = "default:dry_shrub",
-		param2 = 4,
-	})
-
-	-- Marram grass
-
-	minetest.register_decoration({
-		name = "default:marram_grass",
-		deco_type = "simple",
-		place_on = {"default:sand"},
-		sidelen = 4,
-		noise_params = {
-			offset = -0.7,
-			scale = 4.0,
-			spread = {x = 16, y = 16, z = 16},
-			seed = 513337,
-			octaves = 1,
-			persist = 0.0,
-			flags = "absvalue, eased"
-		},
-		biomes = {"coniferous_forest_dunes", "grassland_dunes"},
-		y_max = 6,
-		y_min = 4,
-		decoration = {
-			"default:marram_grass_1",
-			"default:marram_grass_2",
-			"default:marram_grass_3",
-		},
-	})
+	-- OpenClassCraft world decorations replace the old grasses, ferns,
+	-- junglegrass, shrubs, and marram grass in newly generated terrain.
 
 	-- Tundra moss
 

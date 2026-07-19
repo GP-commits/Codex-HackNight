@@ -10,7 +10,7 @@ local function on_flood(pos, oldnode, newnode)
 	if not (nodedef and nodedef.groups and
 			nodedef.groups.igniter and nodedef.groups.igniter > 0) then
 		minetest.sound_play(
-			"default_cool_lava",
+			"openclasscraft_place_hard",
 			{pos = pos, max_hear_distance = 16, gain = 0.07},
 			true
 		)
