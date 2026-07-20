@@ -300,20 +300,23 @@ void RenderingEngine::draw_load_screen(const std::wstring &text,
 {
 	v2u32 screensize = getWindowSize();
 
-	v2s32 textsize(g_fontengine->getTextWidth(text), g_fontengine->getLineHeight());
 	v2s32 center(screensize.X / 2, screensize.Y / 2);
-	core::rect<s32> textrect(center - textsize / 2, center + textsize / 2);
-
-	gui::IGUIStaticText *guitext =
-			gui::StaticText::add(guienv, text, textrect, false, false);
-	guitext->setTextAlignment(gui::EGUIA_CENTER, gui::EGUIA_UPPERLEFT);
 
 	auto *driver = get_video_driver();
 
 	driver->setFog(m_menu_sky_color);
 	driver->beginScene(true, true, m_menu_sky_color);
 
-	if (g_settings->getBool("menu_clouds")) {
+	video::ITexture *background = tsrc ? tsrc->getTexture("menu_background.png") : nullptr;
+	if (background) {
+		const core::dimension2d<u32> bg_size = background->getSize();
+		draw2DImageFilterScaled(driver, background,
+				core::rect<s32>(0, 0, screensize.X, screensize.Y),
+				core::rect<s32>(0, 0, bg_size.Width, bg_size.Height),
+				0, 0, true);
+		driver->draw2DRectangle(video::SColor(96, 10, 18, 22),
+				core::rect<s32>(0, 0, screensize.X, screensize.Y));
+	} else if (g_settings->getBool("menu_clouds")) {
 		g_menuclouds->step(dtime * 3);
 		g_menucloudsmgr->drawAll();
 	}
@@ -325,51 +328,99 @@ void RenderingEngine::draw_load_screen(const std::wstring &text,
 		percent_max = std::min((int) *indef_pos, 100);
 		percent_min = std::max((int) *indef_pos - 40, 0);
 	}
-	// draw progress bar
+
+	float density = g_settings->getFloat("gui_scaling", 0.5f, 20.0f) *
+			getDisplayDensity();
+	s32 panel_w = std::min<s32>(screensize.X - 32, 620 * density);
+	s32 panel_h = std::min<s32>(screensize.Y - 32, 260 * density);
+	panel_w = std::max<s32>(panel_w, 320);
+	panel_h = std::max<s32>(panel_h, 190);
+	core::rect<s32> panel(center.X - panel_w / 2, center.Y - panel_h / 2,
+			center.X + panel_w / 2, center.Y + panel_h / 2);
+
+	driver->draw2DRectangle(video::SColor(188, 23, 30, 34), panel);
+	driver->draw2DRectangle(video::SColor(96, 87, 207, 120),
+			core::rect<s32>(panel.UpperLeftCorner.X + 2, panel.UpperLeftCorner.Y + 2,
+					panel.LowerRightCorner.X - 2, panel.UpperLeftCorner.Y + 5));
+	driver->draw2DRectangle(video::SColor(230, 8, 12, 15),
+			core::rect<s32>(panel.UpperLeftCorner.X, panel.UpperLeftCorner.Y,
+					panel.LowerRightCorner.X, panel.UpperLeftCorner.Y + 2));
+	driver->draw2DRectangle(video::SColor(230, 8, 12, 15),
+			core::rect<s32>(panel.UpperLeftCorner.X, panel.LowerRightCorner.Y - 2,
+					panel.LowerRightCorner.X, panel.LowerRightCorner.Y));
+	driver->draw2DRectangle(video::SColor(230, 8, 12, 15),
+			core::rect<s32>(panel.UpperLeftCorner.X, panel.UpperLeftCorner.Y,
+					panel.UpperLeftCorner.X + 2, panel.LowerRightCorner.Y));
+	driver->draw2DRectangle(video::SColor(230, 8, 12, 15),
+			core::rect<s32>(panel.LowerRightCorner.X - 2, panel.UpperLeftCorner.Y,
+					panel.LowerRightCorner.X, panel.LowerRightCorner.Y));
+
+	video::ITexture *logo = tsrc ? tsrc->getTexture("logo.png") : nullptr;
+	if (logo) {
+		const core::dimension2d<u32> logo_size = logo->getSize();
+		s32 logo_px = std::min<s32>(panel_h / 3, 88 * density);
+		core::rect<s32> logo_rect(center.X - logo_px / 2,
+				panel.UpperLeftCorner.Y + 26 * density,
+				center.X + logo_px / 2,
+				panel.UpperLeftCorner.Y + 26 * density + logo_px);
+		draw2DImageFilterScaled(driver, logo, logo_rect,
+				core::rect<s32>(0, 0, logo_size.Width, logo_size.Height),
+				0, 0, true);
+	}
+
+	std::wstring title = L"OpenClassCraft";
+	v2s32 title_size(g_fontengine->getTextWidth(title), g_fontengine->getLineHeight());
+	core::rect<s32> title_rect(center.X - title_size.X / 2,
+			panel.UpperLeftCorner.Y + 112 * density,
+			center.X + title_size.X / 2,
+			panel.UpperLeftCorner.Y + 112 * density + title_size.Y);
+	gui::IGUIStaticText *titletext =
+			gui::StaticText::add(guienv, title, title_rect, false, false);
+	titletext->setTextAlignment(gui::EGUIA_CENTER, gui::EGUIA_UPPERLEFT);
+	titletext->setOverrideColor(video::SColor(255, 237, 255, 225));
+
+	v2s32 textsize(g_fontengine->getTextWidth(text), g_fontengine->getLineHeight());
+	core::rect<s32> textrect(center.X - textsize.X / 2,
+			panel.UpperLeftCorner.Y + 148 * density,
+			center.X + textsize.X / 2,
+			panel.UpperLeftCorner.Y + 148 * density + textsize.Y);
+	gui::IGUIStaticText *guitext =
+			gui::StaticText::add(guienv, text, textrect, false, false);
+	guitext->setTextAlignment(gui::EGUIA_CENTER, gui::EGUIA_UPPERLEFT);
+	guitext->setOverrideColor(video::SColor(255, 245, 247, 247));
+
 	if ((percent_min >= 0) && (percent_max <= 100)) {
-		video::ITexture *progress_img = tsrc->getTexture("progress_bar.png");
-		video::ITexture *progress_img_bg =
-				tsrc->getTexture("progress_bar_bg.png");
+		s32 bar_w = panel_w - 96 * density;
+		s32 bar_h = 18 * density;
+		bar_w = std::max<s32>(bar_w, 220);
+		bar_h = std::max<s32>(bar_h, 14);
+		s32 bar_x = center.X - bar_w / 2;
+		s32 bar_y = panel.LowerRightCorner.Y - 56 * density;
+		core::rect<s32> bar_bg(bar_x, bar_y, bar_x + bar_w, bar_y + bar_h);
 
-		if (progress_img && progress_img_bg) {
-#ifndef __ANDROID__
-			const core::dimension2d<u32> &img_size =
-					progress_img_bg->getSize();
-			float density = g_settings->getFloat("gui_scaling", 0.5f, 20.0f) *
-					getDisplayDensity();
-			u32 imgW = rangelim(img_size.Width, 200, 600) * density;
-			u32 imgH = rangelim(img_size.Height, 24, 72) * density;
-#else
-			const core::dimension2d<u32> img_size(256, 48);
-			float imgRatio = (float)img_size.Height / img_size.Width;
-			u32 imgW = screensize.X / 2.2f;
-			u32 imgH = floor(imgW * imgRatio);
-#endif
-			v2s32 img_pos((screensize.X - imgW) / 2,
-					(screensize.Y - imgH) / 2);
+		driver->draw2DRectangle(video::SColor(220, 8, 12, 15), bar_bg);
 
-			draw2DImageFilterScaled(get_video_driver(), progress_img_bg,
-					core::rect<s32>(img_pos.X, img_pos.Y,
-							img_pos.X + imgW,
-							img_pos.Y + imgH),
-					core::rect<s32>(0, 0, img_size.Width,
-							img_size.Height),
-					0, 0, true);
-
-			draw2DImageFilterScaled(get_video_driver(), progress_img,
-					core::rect<s32>(img_pos.X + (percent_min * imgW) / 100, img_pos.Y,
-							img_pos.X + (percent_max * imgW) / 100,
-							img_pos.Y + imgH),
-					core::rect<s32>(percent_min * img_size.Width / 100, 0,
-							percent_max * img_size.Width / 100,
-							img_size.Height),
-					0, 0, true);
+		const s32 segments = 18;
+		const s32 gap = std::max<s32>(2, 3 * density);
+		const s32 seg_w = (bar_w - gap * (segments + 1)) / segments;
+		for (s32 i = 0; i < segments; i++) {
+			s32 x1 = bar_x + gap + i * (seg_w + gap);
+			core::rect<s32> seg(x1, bar_y + gap, x1 + seg_w, bar_y + bar_h - gap);
+			s32 seg_min = i * 100 / segments;
+			s32 seg_max = (i + 1) * 100 / segments;
+			bool lit = percent_max >= seg_max && percent_min <= seg_min;
+			bool sweep = percent_max > seg_min && percent_min < seg_max;
+			video::SColor color = lit || sweep
+					? video::SColor(255, 104, 216, 88)
+					: video::SColor(180, 57, 70, 74);
+			driver->draw2DRectangle(color, seg);
 		}
 	}
 
 	guienv->drawAll();
 	driver->endScene();
 	guitext->remove();
+	titletext->remove();
 }
 
 std::vector<video::E_DRIVER_TYPE> RenderingEngine::getSupportedVideoDrivers()
