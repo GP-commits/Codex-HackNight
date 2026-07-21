@@ -315,11 +315,28 @@ gui::IGUIFont *FontEngine::initFont(FontSpec spec)
 	else
 		path_setting = setting_prefix + "font_path" + setting_suffix;
 
+	std::string accessibility_font_path;
+	if (g_settings->getBool("openclasscraft_dyslexia_font") &&
+			spec.mode != _FM_Fallback) {
+		std::string accessibility_name = "Cousine-Regular.ttf";
+		if (setting_suffix == "_bold")
+			accessibility_name = "Cousine-Bold.ttf";
+		else if (setting_suffix == "_italic")
+			accessibility_name = "Cousine-Italic.ttf";
+		else if (setting_suffix == "_bold_italic")
+			accessibility_name = "Cousine-BoldItalic.ttf";
+		accessibility_font_path = porting::getDataPath(
+				std::string("fonts" DIR_DELIM) + accessibility_name);
+	}
+
 	std::string fallback_settings[] = {
+		accessibility_font_path,
 		g_settings->get(path_setting),
 		Settings::getLayer(SL_DEFAULTS)->get(path_setting)
 	};
 	for (const std::string &font_path : fallback_settings) {
+		if (font_path.empty())
+			continue;
 		infostream << "Creating new font: " << font_path.c_str()
 				<< " " << size << "pt" << std::endl;
 

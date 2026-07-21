@@ -1,6 +1,28 @@
 # This file contains settings of minetest_game that can be changed in
 # minetest.conf
 
+# OpenClassCraft accessibility settings.
+
+#    Uses a clearer, wider font family for menus and in-game UI.
+#    A restart is required after changing this.
+openclasscraft_dyslexia_font (Dyslexia-friendly font) bool false
+
+#    Announces supported classroom/game messages in chat-friendly read-aloud form.
+openclasscraft_read_aloud (Read aloud helpers) bool false
+
+#    Uses stronger panel/list colors and clearer form contrast.
+openclasscraft_high_contrast (High contrast) bool false
+
+#    Uses colors and labels that are easier to distinguish for common color vision differences.
+openclasscraft_colorblind_support (Colorblind support) bool false
+
+#    Hides non-essential HUD/control information for newer learners.
+openclasscraft_simplified_controls (Simplified controls) bool false
+
+#    Enlarges menus, forms, HUD elements, and classroom controls.
+#    A restart is recommended after changing this.
+openclasscraft_large_ui (Large UI mode) bool false
+
 #    In creative mode players are able to dig all kind of blocks nearly
 #    instantly, and have access to unlimited resources.
 #    Some of the functionality is only available if this setting is present

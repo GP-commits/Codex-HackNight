@@ -310,6 +310,12 @@ void set_default_settings()
 	settings->setDefault("show_block_bounds_radius_near", "4");
 	settings->setDefault("transparency_sorting_group_by_buffers", "true");
 	settings->setDefault("transparency_sorting_distance", "16");
+	settings->setDefault("openclasscraft_dyslexia_font", "false");
+	settings->setDefault("openclasscraft_read_aloud", "false");
+	settings->setDefault("openclasscraft_high_contrast", "false");
+	settings->setDefault("openclasscraft_colorblind_support", "false");
+	settings->setDefault("openclasscraft_simplified_controls", "false");
+	settings->setDefault("openclasscraft_large_ui", "false");
 
 	settings->setDefault("enable_minimap", "true");
 	settings->setDefault("minimap_shape_round", "true");

@@ -881,6 +881,26 @@ language (Language) enum   ,be,bg,ca,cs,da,de,el,en,eo,es,et,eu,fi,fr,gd,gl,hu,i
 
 [**GUI]
 
+#    Uses a clearer, wider font family for menus and in-game UI.
+#    A restart is required after changing this.
+openclasscraft_dyslexia_font (OpenClassCraft: dyslexia-friendly font) bool false
+
+#    Makes menus, forms, HUD elements, and touch targets larger.
+#    A restart is recommended after changing this.
+openclasscraft_large_ui (OpenClassCraft: large UI mode) bool false
+
+#    Uses stronger UI contrast for OpenClassCraft forms and classroom panels.
+openclasscraft_high_contrast (OpenClassCraft: high contrast UI) bool false
+
+#    Uses color choices that are easier to distinguish for common color vision differences.
+openclasscraft_colorblind_support (OpenClassCraft: colorblind support) bool false
+
+#    Shows only essential HUD/control information for learners.
+openclasscraft_simplified_controls (OpenClassCraft: simplified controls) bool false
+
+#    Enables read-aloud style helper messages for supported OpenClassCraft classroom events.
+openclasscraft_read_aloud (OpenClassCraft: read aloud helpers) bool false
+
 #    When enabled, the GUI is optimized to be more usable on touchscreens.
 #    Whether this is enabled by default depends on your hardware form-factor.
 touch_gui (Optimize GUI for touchscreens) bool false

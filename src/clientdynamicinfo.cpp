@@ -10,6 +10,7 @@
 #include "client/renderingengine.h"
 #include "gui/guiFormSpecMenu.h"
 #include "gui/touchcontrols.h"
+#include "util/numeric.h"
 
 ClientDynamicInfo ClientDynamicInfo::getCurrent()
 {
@@ -17,6 +18,10 @@ ClientDynamicInfo ClientDynamicInfo::getCurrent()
 	f32 density = RenderingEngine::getDisplayDensity();
 	f32 gui_scaling = g_settings->getFloat("gui_scaling", 0.5f, 20.0f);
 	f32 hud_scaling = g_settings->getFloat("hud_scaling", 0.5f, 20.0f);
+	if (g_settings->getBool("openclasscraft_large_ui")) {
+		gui_scaling = rangelim(gui_scaling * 1.35f, 0.5f, 20.0f);
+		hud_scaling = rangelim(hud_scaling * 1.35f, 0.5f, 20.0f);
+	}
 	f32 real_gui_scaling = gui_scaling * density;
 	f32 real_hud_scaling = hud_scaling * density;
 	bool touch_controls = g_touchcontrols;

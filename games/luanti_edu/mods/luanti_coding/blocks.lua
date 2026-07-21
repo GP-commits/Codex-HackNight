@@ -11,6 +11,11 @@ local COLORS = {
     turn    = "#aa44ff",  -- Purple
     loop    = "#ff8800",  -- Orange
     if_cond = "#ffcc00",  -- Yellow
+    else_cond = "#f4a600", -- Amber
+    while_cond = "#00aa66", -- Green-blue
+    variable = "#3366ff", -- Indigo
+    sensor  = "#00bbcc",  -- Teal
+    wait    = "#7777aa",  -- Slate
     stop    = "#ff2244",  -- Red
     place   = "#44dddd",  -- Cyan
     dig     = "#bb6600",  -- Brown
@@ -148,7 +153,7 @@ end)
 -- IF Block (if block ahead is air -> continue, else skip)
 ----------------------------------------------------------------------
 minetest.register_node("luanti_coding:if_clear", {
-    description = "IF CLEAR Block\nContinues if path is clear, skips next block if blocked.",
+    description = "IF Block\nIf path is clear, runs the next block. If blocked, skips the next block.",
     tiles = {
         "coding_block_top.png^[colorize:" .. COLORS.if_cond .. ":160",
         "coding_block_top.png^[colorize:" .. COLORS.if_cond .. ":160",
@@ -160,6 +165,99 @@ minetest.register_node("luanti_coding:if_clear", {
     groups = { cracky = 1, coding_block = 1, coding_if = 1 },
     is_ground_content = false,
     _coding_action = "if_clear",
+})
+
+----------------------------------------------------------------------
+-- ELSE Block
+-- Use after the action that belongs to an IF block. If IF was true,
+-- ELSE skips the next block. If IF was false, execution reaches ELSE
+-- and continues into the next block.
+----------------------------------------------------------------------
+minetest.register_node("luanti_coding:else_block", {
+    description = "ELSE Block\nRuns the next block only when the previous IF skipped its action.",
+    tiles = {
+        "coding_block_top.png^[colorize:" .. COLORS.else_cond .. ":160",
+        "coding_block_top.png^[colorize:" .. COLORS.else_cond .. ":160",
+        "coding_block_side_output.png^[colorize:" .. COLORS.else_cond .. ":160",
+        "coding_block_side_input.png^[colorize:" .. COLORS.else_cond .. ":160",
+        "coding_block_front_else.png",
+        "coding_block_back.png",
+    },
+    groups = { cracky = 1, coding_block = 1, coding_else = 1 },
+    is_ground_content = false,
+    _coding_action = "else_block",
+})
+
+----------------------------------------------------------------------
+-- WHILE CLEAR Block
+----------------------------------------------------------------------
+minetest.register_node("luanti_coding:while_clear", {
+    description = "WHILE Block\nRepeats the next block while the robot's path is clear.",
+    tiles = {
+        "coding_block_top.png^[colorize:" .. COLORS.while_cond .. ":160",
+        "coding_block_top.png^[colorize:" .. COLORS.while_cond .. ":160",
+        "coding_block_side_output.png^[colorize:" .. COLORS.while_cond .. ":160",
+        "coding_block_side_input.png^[colorize:" .. COLORS.while_cond .. ":160",
+        "coding_block_front_while.png",
+        "coding_block_back.png",
+    },
+    groups = { cracky = 1, coding_block = 1, coding_while = 1 },
+    is_ground_content = false,
+    _coding_action = "while_clear",
+})
+
+----------------------------------------------------------------------
+-- VARIABLE Block
+----------------------------------------------------------------------
+minetest.register_node("luanti_coding:variable", {
+    description = "VARIABLE Block\nAdds 1 to the program counter variable.",
+    tiles = {
+        "coding_block_top.png^[colorize:" .. COLORS.variable .. ":160",
+        "coding_block_top.png^[colorize:" .. COLORS.variable .. ":160",
+        "coding_block_side_output.png^[colorize:" .. COLORS.variable .. ":160",
+        "coding_block_side_input.png^[colorize:" .. COLORS.variable .. ":160",
+        "coding_block_front_variable.png",
+        "coding_block_back.png",
+    },
+    groups = { cracky = 1, coding_block = 1, coding_variable = 1 },
+    is_ground_content = false,
+    _coding_action = "variable_inc",
+})
+
+----------------------------------------------------------------------
+-- SENSOR Block
+----------------------------------------------------------------------
+minetest.register_node("luanti_coding:sensor", {
+    description = "SENSOR Block\nChecks the block in front. If blocked, skips the next block.",
+    tiles = {
+        "coding_block_top.png^[colorize:" .. COLORS.sensor .. ":160",
+        "coding_block_top.png^[colorize:" .. COLORS.sensor .. ":160",
+        "coding_block_side_output.png^[colorize:" .. COLORS.sensor .. ":160",
+        "coding_block_side_input.png^[colorize:" .. COLORS.sensor .. ":160",
+        "coding_block_front_sensor.png",
+        "coding_block_back.png",
+    },
+    groups = { cracky = 1, coding_block = 1, coding_sensor = 1 },
+    is_ground_content = false,
+    _coding_action = "sensor_clear",
+})
+
+----------------------------------------------------------------------
+-- WAIT Block
+----------------------------------------------------------------------
+minetest.register_node("luanti_coding:wait", {
+    description = "WAIT Block\nPauses the robot for 1 second.",
+    tiles = {
+        "coding_block_top.png^[colorize:" .. COLORS.wait .. ":160",
+        "coding_block_top.png^[colorize:" .. COLORS.wait .. ":160",
+        "coding_block_side_output.png^[colorize:" .. COLORS.wait .. ":160",
+        "coding_block_side_input.png^[colorize:" .. COLORS.wait .. ":160",
+        "coding_block_front_wait.png",
+        "coding_block_back.png",
+    },
+    groups = { cracky = 1, coding_block = 1, coding_wait = 1 },
+    is_ground_content = false,
+    _coding_action = "wait",
 })
 
 ----------------------------------------------------------------------
@@ -273,6 +371,51 @@ minetest.register_craft({
         {"default:stick", "default:stone", "default:stick"},
         {"default:stone", "default:stone", "default:stone"},
         {"", "default:stick", ""},
+    },
+})
+-- ELSE: amber branch block
+minetest.register_craft({
+    output = "luanti_coding:else_block 2",
+    recipe = {
+        {"default:stone", "", "default:stone"},
+        {"", "default:coal_lump", ""},
+        {"default:stone", "", "default:stone"},
+    },
+})
+-- WHILE: repeat while condition is true
+minetest.register_craft({
+    output = "luanti_coding:while_clear 2",
+    recipe = {
+        {"default:mese_crystal", "default:stone", "default:mese_crystal"},
+        {"default:stone", "default:stick", "default:stone"},
+        {"default:mese_crystal", "default:stone", "default:mese_crystal"},
+    },
+})
+-- VARIABLE: data/counter block
+minetest.register_craft({
+    output = "luanti_coding:variable 3",
+    recipe = {
+        {"default:stick", "default:coal_lump", "default:stick"},
+        {"default:stone", "default:mese_crystal", "default:stone"},
+        {"default:stick", "default:coal_lump", "default:stick"},
+    },
+})
+-- SENSOR: check what is in front
+minetest.register_craft({
+    output = "luanti_coding:sensor 3",
+    recipe = {
+        {"", "default:mese_crystal", ""},
+        {"default:stone", "default:coal_lump", "default:stone"},
+        {"", "default:mese_crystal", ""},
+    },
+})
+-- WAIT: pause program
+minetest.register_craft({
+    output = "luanti_coding:wait 3",
+    recipe = {
+        {"default:stone", "default:coal_lump", "default:stone"},
+        {"", "default:stick", ""},
+        {"default:stone", "default:coal_lump", "default:stone"},
     },
 })
 -- PLACE BLOCK: plus sign with stone
