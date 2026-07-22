@@ -325,8 +325,9 @@ gui::IGUIFont *FontEngine::initFont(FontSpec spec)
 			accessibility_name = "Cousine-Italic.ttf";
 		else if (setting_suffix == "_bold_italic")
 			accessibility_name = "Cousine-BoldItalic.ttf";
-		accessibility_font_path = porting::getDataPath(
-				std::string("fonts" DIR_DELIM) + accessibility_name);
+		std::string accessibility_rel_path =
+				std::string("fonts") + DIR_DELIM + accessibility_name;
+		accessibility_font_path = porting::getDataPath(accessibility_rel_path.c_str());
 	}
 
 	std::string fallback_settings[] = {
